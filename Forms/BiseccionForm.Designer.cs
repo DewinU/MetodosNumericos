@@ -214,7 +214,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton45.AutoSizeRightIcon = true;
             this.bunifuButton45.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton45.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton45.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton45.BackgroundImage")));
+            //this.bunifuButton45.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton45.BackgroundImage")));
             this.bunifuButton45.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton45.ButtonText = "=";
             this.bunifuButton45.ButtonTextMarginLeft = 0;
@@ -304,7 +304,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton24.AutoSizeRightIcon = true;
             this.bunifuButton24.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton24.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton24.BackgroundImage")));
+            //this.bunifuButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton24.BackgroundImage")));
             this.bunifuButton24.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton24.ButtonText = "COS";
             this.bunifuButton24.ButtonTextMarginLeft = 0;
@@ -394,7 +394,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton44.AutoSizeRightIcon = true;
             this.bunifuButton44.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton44.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton44.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton44.BackgroundImage")));
+            //this.bunifuButton44.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton44.BackgroundImage")));
             this.bunifuButton44.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton44.ButtonText = "ESPACIO";
             this.bunifuButton44.ButtonTextMarginLeft = 0;

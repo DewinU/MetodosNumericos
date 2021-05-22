@@ -89,7 +89,7 @@ namespace MetodosNumericos
             // subMatrices
             // 
             this.subMatrices.BackgroundColor = System.Drawing.Color.Transparent;
-            this.subMatrices.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("subMatrices.BackgroundImage")));
+            //this.subMatrices.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("subMatrices.BackgroundImage")));
             this.subMatrices.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.subMatrices.BorderColor = System.Drawing.Color.Transparent;
             this.subMatrices.BorderRadius = 3;
@@ -116,7 +116,7 @@ namespace MetodosNumericos
             this.bunifuButton6.AutoSizeRightIcon = true;
             this.bunifuButton6.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton6.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(226)))), ((int)(((byte)(230)))));
-            this.bunifuButton6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton6.BackgroundImage")));
+            //this.bunifuButton6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton6.BackgroundImage")));
             this.bunifuButton6.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton6.ButtonText = "Metodo Gauss-Siedel";
             this.bunifuButton6.ButtonTextMarginLeft = 0;
@@ -150,7 +150,7 @@ namespace MetodosNumericos
             this.bunifuButton6.IdleBorderThickness = 1;
             this.bunifuButton6.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(226)))), ((int)(((byte)(230)))));
             this.bunifuButton6.IdleIconLeftImage = null;
-            this.bunifuButton6.IdleIconRightImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton6.IdleIconRightImage")));
+            //this.bunifuButton6.IdleIconRightImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton6.IdleIconRightImage")));
             this.bunifuButton6.IndicateFocus = false;
             this.bunifuButton6.Location = new System.Drawing.Point(0, 78);
             this.bunifuButton6.Name = "bunifuButton6";
