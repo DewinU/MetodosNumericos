@@ -225,7 +225,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton45.AutoSizeRightIcon = true;
             this.bunifuButton45.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton45.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton45.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton45.BackgroundImage")));
+            //this.bunifuButton45.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton45.BackgroundImage")));
             this.bunifuButton45.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton45.ButtonText = "=";
             this.bunifuButton45.ButtonTextMarginLeft = 0;
@@ -315,7 +315,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton24.AutoSizeRightIcon = true;
             this.bunifuButton24.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton24.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton24.BackgroundImage")));
+            //this.bunifuButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton24.BackgroundImage")));
             this.bunifuButton24.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton24.ButtonText = "COS";
             this.bunifuButton24.ButtonTextMarginLeft = 0;
@@ -405,7 +405,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton44.AutoSizeRightIcon = true;
             this.bunifuButton44.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton44.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton44.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton44.BackgroundImage")));
+            //this.bunifuButton44.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton44.BackgroundImage")));
             this.bunifuButton44.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton44.ButtonText = "ESPACIO";
             this.bunifuButton44.ButtonTextMarginLeft = 0;
@@ -495,7 +495,7 @@ namespace MetodosNumericos.Forms
             this.btn1.AutoSizeRightIcon = true;
             this.btn1.BackColor = System.Drawing.Color.Transparent;
             this.btn1.BackColor1 = System.Drawing.Color.Transparent;
-            this.btn1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn1.BackgroundImage")));
+            //this.btn1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn1.BackgroundImage")));
             this.btn1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btn1.ButtonText = "7";
             this.btn1.ButtonTextMarginLeft = 0;
@@ -585,7 +585,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton42.AutoSizeRightIcon = true;
             this.bunifuButton42.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton42.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton42.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton42.BackgroundImage")));
+            //this.bunifuButton42.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton42.BackgroundImage")));
             this.bunifuButton42.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton42.ButtonText = "Ln";
             this.bunifuButton42.ButtonTextMarginLeft = 0;
@@ -675,7 +675,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton1.AutoSizeRightIcon = true;
             this.bunifuButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton1.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.BackgroundImage")));
+            //this.bunifuButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.BackgroundImage")));
             this.bunifuButton1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton1.ButtonText = "8";
             this.bunifuButton1.ButtonTextMarginLeft = 0;
@@ -765,7 +765,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton41.AutoSizeRightIcon = true;
             this.bunifuButton41.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton41.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton41.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton41.BackgroundImage")));
+            //this.bunifuButton41.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton41.BackgroundImage")));
             this.bunifuButton41.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton41.ButtonText = "Log2";
             this.bunifuButton41.ButtonTextMarginLeft = 0;
@@ -855,7 +855,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton2.AutoSizeRightIcon = true;
             this.bunifuButton2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton2.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton2.BackgroundImage")));
+            //this.bunifuButton2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton2.BackgroundImage")));
             this.bunifuButton2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton2.ButtonText = "9";
             this.bunifuButton2.ButtonTextMarginLeft = 0;
@@ -945,7 +945,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton40.AutoSizeRightIcon = true;
             this.bunifuButton40.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton40.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton40.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton40.BackgroundImage")));
+            //this.bunifuButton40.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton40.BackgroundImage")));
             this.bunifuButton40.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton40.ButtonText = "Log10";
             this.bunifuButton40.ButtonTextMarginLeft = 0;
@@ -1035,7 +1035,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton3.AutoSizeRightIcon = true;
             this.bunifuButton3.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton3.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton3.BackgroundImage")));
+            //this.bunifuButton3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton3.BackgroundImage")));
             this.bunifuButton3.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton3.ButtonText = "4";
             this.bunifuButton3.ButtonTextMarginLeft = 0;
@@ -1125,7 +1125,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton39.AutoSizeRightIcon = true;
             this.bunifuButton39.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton39.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton39.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton39.BackgroundImage")));
+            //this.bunifuButton39.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton39.BackgroundImage")));
             this.bunifuButton39.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton39.ButtonText = "ACSC";
             this.bunifuButton39.ButtonTextMarginLeft = 0;
@@ -1215,7 +1215,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton4.AutoSizeRightIcon = true;
             this.bunifuButton4.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton4.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton4.BackgroundImage")));
+            //this.bunifuButton4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton4.BackgroundImage")));
             this.bunifuButton4.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton4.ButtonText = "5";
             this.bunifuButton4.ButtonTextMarginLeft = 0;
@@ -1305,7 +1305,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton38.AutoSizeRightIcon = true;
             this.bunifuButton38.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton38.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton38.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton38.BackgroundImage")));
+            //this.bunifuButton38.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton38.BackgroundImage")));
             this.bunifuButton38.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton38.ButtonText = "ASEC";
             this.bunifuButton38.ButtonTextMarginLeft = 0;
@@ -1395,7 +1395,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton5.AutoSizeRightIcon = true;
             this.bunifuButton5.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton5.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton5.BackgroundImage")));
+            //this.bunifuButton5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton5.BackgroundImage")));
             this.bunifuButton5.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton5.ButtonText = "6";
             this.bunifuButton5.ButtonTextMarginLeft = 0;
@@ -1485,7 +1485,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton37.AutoSizeRightIcon = true;
             this.bunifuButton37.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton37.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton37.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton37.BackgroundImage")));
+            //this.bunifuButton37.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton37.BackgroundImage")));
             this.bunifuButton37.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton37.ButtonText = "ACOT";
             this.bunifuButton37.ButtonTextMarginLeft = 0;
@@ -1575,7 +1575,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton6.AutoSizeRightIcon = true;
             this.bunifuButton6.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton6.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton6.BackgroundImage")));
+            //this.bunifuButton6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton6.BackgroundImage")));
             this.bunifuButton6.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton6.ButtonText = "1";
             this.bunifuButton6.ButtonTextMarginLeft = 0;
@@ -1665,7 +1665,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton36.AutoSizeRightIcon = true;
             this.bunifuButton36.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton36.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton36.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton36.BackgroundImage")));
+            //this.bunifuButton36.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton36.BackgroundImage")));
             this.bunifuButton36.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton36.ButtonText = "ATAN";
             this.bunifuButton36.ButtonTextMarginLeft = 0;
@@ -1755,7 +1755,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton7.AutoSizeRightIcon = true;
             this.bunifuButton7.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton7.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton7.BackgroundImage")));
+            //this.bunifuButton7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton7.BackgroundImage")));
             this.bunifuButton7.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton7.ButtonText = "2";
             this.bunifuButton7.ButtonTextMarginLeft = 0;
@@ -1845,7 +1845,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton35.AutoSizeRightIcon = true;
             this.bunifuButton35.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton35.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton35.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton35.BackgroundImage")));
+            //this.bunifuButton35.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton35.BackgroundImage")));
             this.bunifuButton35.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton35.ButtonText = "ACOS";
             this.bunifuButton35.ButtonTextMarginLeft = 0;
@@ -1935,7 +1935,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton8.AutoSizeRightIcon = true;
             this.bunifuButton8.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton8.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton8.BackgroundImage")));
+            //this.bunifuButton8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton8.BackgroundImage")));
             this.bunifuButton8.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton8.ButtonText = "3";
             this.bunifuButton8.ButtonTextMarginLeft = 0;
@@ -2025,7 +2025,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton34.AutoSizeRightIcon = true;
             this.bunifuButton34.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton34.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton34.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton34.BackgroundImage")));
+            //this.bunifuButton34.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton34.BackgroundImage")));
             this.bunifuButton34.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton34.ButtonText = "ASEN";
             this.bunifuButton34.ButtonTextMarginLeft = 0;
@@ -2115,7 +2115,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton9.AutoSizeRightIcon = true;
             this.bunifuButton9.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton9.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton9.BackgroundImage")));
+            //this.bunifuButton9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton9.BackgroundImage")));
             this.bunifuButton9.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton9.ButtonText = "0";
             this.bunifuButton9.ButtonTextMarginLeft = 0;
@@ -2205,7 +2205,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton29.AutoSizeRightIcon = true;
             this.bunifuButton29.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton29.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton29.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton29.BackgroundImage")));
+            //this.bunifuButton29.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton29.BackgroundImage")));
             this.bunifuButton29.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton29.ButtonText = "COT";
             this.bunifuButton29.ButtonTextMarginLeft = 0;
@@ -2295,7 +2295,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton10.AutoSizeRightIcon = true;
             this.bunifuButton10.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton10.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton10.BackgroundImage")));
+            //this.bunifuButton10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton10.BackgroundImage")));
             this.bunifuButton10.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton10.ButtonText = "(";
             this.bunifuButton10.ButtonTextMarginLeft = 0;
@@ -2385,7 +2385,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton33.AutoSizeRightIcon = true;
             this.bunifuButton33.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton33.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton33.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton33.BackgroundImage")));
+            //this.bunifuButton33.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton33.BackgroundImage")));
             this.bunifuButton33.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton33.ButtonText = ".";
             this.bunifuButton33.ButtonTextMarginLeft = 0;
@@ -2475,7 +2475,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton11.AutoSizeRightIcon = true;
             this.bunifuButton11.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton11.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton11.BackgroundImage")));
+            //this.bunifuButton11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton11.BackgroundImage")));
             this.bunifuButton11.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton11.ButtonText = ")";
             this.bunifuButton11.ButtonTextMarginLeft = 0;
@@ -2565,7 +2565,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton28.AutoSizeRightIcon = true;
             this.bunifuButton28.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton28.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton28.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton28.BackgroundImage")));
+            //this.bunifuButton28.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton28.BackgroundImage")));
             this.bunifuButton28.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton28.ButtonText = "CSC";
             this.bunifuButton28.ButtonTextMarginLeft = 0;
@@ -2655,7 +2655,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton12.AutoSizeRightIcon = true;
             this.bunifuButton12.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton12.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton12.BackgroundImage")));
+            //this.bunifuButton12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton12.BackgroundImage")));
             this.bunifuButton12.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton12.ButtonText = "x";
             this.bunifuButton12.ButtonTextMarginLeft = 0;
@@ -2745,7 +2745,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton27.AutoSizeRightIcon = true;
             this.bunifuButton27.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton27.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton27.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton27.BackgroundImage")));
+            //this.bunifuButton27.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton27.BackgroundImage")));
             this.bunifuButton27.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton27.ButtonText = "SEC";
             this.bunifuButton27.ButtonTextMarginLeft = 0;
@@ -2835,7 +2835,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton13.AutoSizeRightIcon = true;
             this.bunifuButton13.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton13.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton13.BackgroundImage")));
+            //this.bunifuButton13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton13.BackgroundImage")));
             this.bunifuButton13.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton13.ButtonText = "]";
             this.bunifuButton13.ButtonTextMarginLeft = 0;
@@ -2925,7 +2925,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton30.AutoSizeRightIcon = true;
             this.bunifuButton30.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton30.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton30.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton30.BackgroundImage")));
+            //this.bunifuButton30.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton30.BackgroundImage")));
             this.bunifuButton30.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton30.ButtonText = "π";
             this.bunifuButton30.ButtonTextMarginLeft = 0;
@@ -3015,7 +3015,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton15.AutoSizeRightIcon = true;
             this.bunifuButton15.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton15.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton15.BackgroundImage")));
+            //this.bunifuButton15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton15.BackgroundImage")));
             this.bunifuButton15.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton15.ButtonText = "[";
             this.bunifuButton15.ButtonTextMarginLeft = 0;
@@ -3105,7 +3105,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton26.AutoSizeRightIcon = true;
             this.bunifuButton26.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton26.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton26.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton26.BackgroundImage")));
+            //this.bunifuButton26.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton26.BackgroundImage")));
             this.bunifuButton26.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton26.ButtonText = "SEN";
             this.bunifuButton26.ButtonTextMarginLeft = 0;
@@ -3195,7 +3195,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton16.AutoSizeRightIcon = true;
             this.bunifuButton16.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton16.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton16.BackgroundImage")));
+            //this.bunifuButton16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton16.BackgroundImage")));
             this.bunifuButton16.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton16.ButtonText = "/";
             this.bunifuButton16.ButtonTextMarginLeft = 0;
@@ -3285,7 +3285,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton17.AutoSizeRightIcon = true;
             this.bunifuButton17.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton17.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton17.BackgroundImage")));
+            //this.bunifuButton17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton17.BackgroundImage")));
             this.bunifuButton17.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton17.ButtonText = "*";
             this.bunifuButton17.ButtonTextMarginLeft = 0;
@@ -3375,7 +3375,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton23.AutoSizeRightIcon = true;
             this.bunifuButton23.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton23.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton23.BackgroundImage")));
+            //this.bunifuButton23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton23.BackgroundImage")));
             this.bunifuButton23.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton23.ButtonText = "^";
             this.bunifuButton23.ButtonTextMarginLeft = 0;
@@ -3465,7 +3465,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton18.AutoSizeRightIcon = true;
             this.bunifuButton18.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton18.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton18.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton18.BackgroundImage")));
+            //this.bunifuButton18.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton18.BackgroundImage")));
             this.bunifuButton18.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton18.ButtonText = "+";
             this.bunifuButton18.ButtonTextMarginLeft = 0;
@@ -3555,7 +3555,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton31.AutoSizeRightIcon = true;
             this.bunifuButton31.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton31.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton31.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton31.BackgroundImage")));
+            //this.bunifuButton31.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton31.BackgroundImage")));
             this.bunifuButton31.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton31.ButtonText = "e";
             this.bunifuButton31.ButtonTextMarginLeft = 0;
@@ -3645,7 +3645,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton19.AutoSizeRightIcon = true;
             this.bunifuButton19.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton19.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton19.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton19.BackgroundImage")));
+            //this.bunifuButton19.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton19.BackgroundImage")));
             this.bunifuButton19.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton19.ButtonText = "-";
             this.bunifuButton19.ButtonTextMarginLeft = 0;
@@ -3735,7 +3735,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton22.AutoSizeRightIcon = true;
             this.bunifuButton22.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton22.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton22.BackgroundImage")));
+            //this.bunifuButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton22.BackgroundImage")));
             this.bunifuButton22.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton22.ButtonText = "AC";
             this.bunifuButton22.ButtonTextMarginLeft = 0;
@@ -3825,7 +3825,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton20.AutoSizeRightIcon = true;
             this.bunifuButton20.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton20.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton20.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton20.BackgroundImage")));
+            //this.bunifuButton20.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton20.BackgroundImage")));
             this.bunifuButton20.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton20.ButtonText = "√";
             this.bunifuButton20.ButtonTextMarginLeft = 0;
@@ -3915,7 +3915,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton25.AutoSizeRightIcon = true;
             this.bunifuButton25.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton25.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton25.BackgroundImage")));
+            //this.bunifuButton25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton25.BackgroundImage")));
             this.bunifuButton25.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton25.ButtonText = "TAN";
             this.bunifuButton25.ButtonTextMarginLeft = 0;
@@ -4005,7 +4005,7 @@ namespace MetodosNumericos.Forms
             this.bunifuButton21.AutoSizeRightIcon = true;
             this.bunifuButton21.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton21.BackColor1 = System.Drawing.Color.Transparent;
-            this.bunifuButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton21.BackgroundImage")));
+            //this.bunifuButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton21.BackgroundImage")));
             this.bunifuButton21.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton21.ButtonText = "DEL";
             this.bunifuButton21.ButtonTextMarginLeft = 0;
@@ -4122,7 +4122,7 @@ namespace MetodosNumericos.Forms
             this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.DimGray;
             this.bunifuThinButton21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            //this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
             this.bunifuThinButton21.ButtonText = "Ver Calculo de la Raiz";
             this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -4148,7 +4148,7 @@ namespace MetodosNumericos.Forms
             this.txtB.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtB.BackColor = System.Drawing.Color.White;
-            this.txtB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtB.BackgroundImage")));
+            //this.txtB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtB.BackgroundImage")));
             this.txtB.BorderColorActive = System.Drawing.Color.DimGray;
             this.txtB.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.txtB.BorderColorHover = System.Drawing.Color.Silver;
@@ -4224,7 +4224,7 @@ namespace MetodosNumericos.Forms
             this.txtA.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtA.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtA.BackColor = System.Drawing.Color.White;
-            this.txtA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtA.BackgroundImage")));
+            //this.txtA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtA.BackgroundImage")));
             this.txtA.BorderColorActive = System.Drawing.Color.DimGray;
             this.txtA.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.txtA.BorderColorHover = System.Drawing.Color.Silver;
@@ -4302,7 +4302,7 @@ namespace MetodosNumericos.Forms
             this.txtResult.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtResult.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtResult.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtResult.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtResult.BackgroundImage")));
+            //this.txtResult.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtResult.BackgroundImage")));
             this.txtResult.BorderColorActive = System.Drawing.Color.Black;
             this.txtResult.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.txtResult.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
@@ -4378,7 +4378,7 @@ namespace MetodosNumericos.Forms
             this.txtFuncion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtFuncion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtFuncion.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtFuncion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtFuncion.BackgroundImage")));
+            //this.txtFuncion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtFuncion.BackgroundImage")));
             this.txtFuncion.BorderColorActive = System.Drawing.Color.Black;
             this.txtFuncion.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.txtFuncion.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
@@ -4464,7 +4464,7 @@ namespace MetodosNumericos.Forms
             this.txtError.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtError.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtError.BackColor = System.Drawing.Color.White;
-            this.txtError.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtError.BackgroundImage")));
+            //this.txtError.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtError.BackgroundImage")));
             this.txtError.BorderColorActive = System.Drawing.Color.DimGray;
             this.txtError.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.txtError.BorderColorHover = System.Drawing.Color.Silver;

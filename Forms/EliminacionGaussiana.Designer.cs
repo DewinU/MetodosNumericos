@@ -131,7 +131,7 @@ namespace MetodosNumericos.Forms
             this.txtMatrix.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtMatrix.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtMatrix.BackColor = System.Drawing.Color.Transparent;
-            this.txtMatrix.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtMatrix.BackgroundImage")));
+            //this.txtMatrix.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtMatrix.BackgroundImage")));
             this.txtMatrix.BorderColorActive = System.Drawing.Color.Black;
             this.txtMatrix.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.txtMatrix.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
@@ -206,7 +206,7 @@ namespace MetodosNumericos.Forms
             this.txtResult.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtResult.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtResult.BackColor = System.Drawing.Color.Transparent;
-            this.txtResult.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtResult.BackgroundImage")));
+            //this.txtResult.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtResult.BackgroundImage")));
             this.txtResult.BorderColorActive = System.Drawing.Color.Black;
             this.txtResult.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.txtResult.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
@@ -281,7 +281,7 @@ namespace MetodosNumericos.Forms
             this.txtEcuaciones.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtEcuaciones.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtEcuaciones.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtEcuaciones.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtEcuaciones.BackgroundImage")));
+            //this.txtEcuaciones.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtEcuaciones.BackgroundImage")));
             this.txtEcuaciones.BorderColorActive = System.Drawing.Color.Black;
             this.txtEcuaciones.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.txtEcuaciones.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
@@ -361,7 +361,7 @@ namespace MetodosNumericos.Forms
             this.btnGauss.AutoSizeRightIcon = true;
             this.btnGauss.BackColor = System.Drawing.Color.Transparent;
             this.btnGauss.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(226)))), ((int)(((byte)(230)))));
-            this.btnGauss.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGauss.BackgroundImage")));
+            //this.btnGauss.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGauss.BackgroundImage")));
             this.btnGauss.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnGauss.ButtonText = "Calcular Gauss";
             this.btnGauss.ButtonTextMarginLeft = 0;
