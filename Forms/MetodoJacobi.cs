@@ -11,41 +11,33 @@ using System.Windows.Forms;
 
 namespace MetodosNumericos.Forms
 {
-    public partial class EliminacionGaussiana : Form
+    public partial class MetodoJacobi : Form
     {
-        public EliminacionGaussiana()
+        public MetodoJacobi()
         {
             InitializeComponent();
         }
 
-        private void btnGauss_Click(object sender, EventArgs e)
+        private void btnJacobi_Click(object sender, EventArgs e)
         {
-            txtMatrix.Clear();
-            txtResult.Clear();
+            txtEcuaciones.Clear();
 
-            try
+            Jacobi mt = new Jacobi(dgvEcuaciones.RowCount, dgvEcuaciones.ColumnCount);
+
+            double[,] matIn = llenarArray();
+
+            for (int i = 0; i < dgvEcuaciones.RowCount; i++)
             {
-                Gauss mt = new Gauss(dgvEcuaciones.RowCount, dgvEcuaciones.ColumnCount);
-
-                double[,] matIn = llenarArray();
-
-                for (int i = 0; i < dgvEcuaciones.RowCount; i++)
+                for (int j = 0; j < dgvEcuaciones.ColumnCount; j++)
                 {
-                    for (int j = 0; j < dgvEcuaciones.ColumnCount; j++)
-                    {
-                        mt.SetValue(i, j, matIn[i, j]);
-                    }
+                    mt.SetValue(i, j, matIn[i, j]);
                 }
-
-                mt.Cambio += new EventHandler<MatrizEventArgs>(mt_Cambio);
-                mt.Completo += new EventHandler<MatrizEventArgs>(mt_Completo);
-
-                mt.ApplyGaussMethod();
             }
-            catch
-            {
-                //....
-            }
+
+            mt.Cambio += new EventHandler<MatrizEventArgs>(mt_Cambio);
+            mt.Completo += new EventHandler<MatrizEventArgs>(mt_Completo);
+
+            mt.ApplyJacobyMethod();
         }
 
         private void txtEcuaciones_TextChange(object sender, EventArgs e)
@@ -86,10 +78,10 @@ namespace MetodosNumericos.Forms
 
         private double[,] llenarArray()
         {
-            double[,] array = new double[dgvEcuaciones.Rows.Count, dgvEcuaciones.Columns.Count];
-            for (int i = 0; i < dgvEcuaciones.Columns.Count; i++)
+            double[,] array = new double[dgvEcuaciones.RowCount, dgvEcuaciones.ColumnCount];
+            for (int i = 0; i < dgvEcuaciones.ColumnCount; i++)
             {
-                for (int j = 0; j < dgvEcuaciones.Rows.Count; j++)
+                for (int j = 0; j < dgvEcuaciones.RowCount; j++)
                 {
                     array[j, i] = double.Parse(dgvEcuaciones.Rows[j].Cells[i].Value.ToString());
                 }
@@ -100,12 +92,17 @@ namespace MetodosNumericos.Forms
 
         void mt_Completo(object sender, MatrizEventArgs e)
         {
-            txtResult.Text += e.Text;
+            txtResult.Text = e.Text;
         }
 
         void mt_Cambio(object sender, MatrizEventArgs e)
         {
-            txtMatrix.Text += e.Text;
+            txtProcess.Text += e.Text;
+        }
+
+        private void txtProcess_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
