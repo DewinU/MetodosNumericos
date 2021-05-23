@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using org.mariuszgromada.math.mxparser;
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
@@ -18,7 +13,7 @@ namespace MetodosNumericos.Forms
             InitializeComponent();
         }
 
-        private void btnAceptar_Click(object sender, EventArgs e)
+        private void btn_Aceptar_Click(object sender, EventArgs e)
         {
             this.chart.Series["g(x)"].Points.Clear();
             this.chart.Series["h(x)"].Points.Clear();
@@ -31,23 +26,17 @@ namespace MetodosNumericos.Forms
             // X^3
             //-----------------------------------------------
 
-            for (float i = a; i < b; i = ((float)(i + 0.5)))
+            for (float i = a; i <= b; i = ((float)(i + 0.5)))
             {
                 this.chart.Series["g(x)"].Points.AddXY(i, Math.Pow(i, 3));
             }
 
             //------------------------------------------------
             // X^2 - 1
-            for (float i = a; i < b; i = ((float)(i + 0.5)))
+            for (float i = a; i <= b; i = ((float)(i + 0.5)))
             {
                 this.chart.Series["h(x)"].Points.AddXY(i, (Math.Pow(i, 2) - 1));
             }
-        }
-
-        private void btnClean_Click(object sender, EventArgs e)
-        {
-            this.chart.Series["g(x)"].Points.Clear();
-            this.chart.Series["h(x)"].Points.Clear();
         }
 
         //-----------------------------------------------------------------------------------------------
@@ -102,6 +91,274 @@ namespace MetodosNumericos.Forms
 
             (new GraficoForm(float.Parse(txta.Text), float.Parse(txtb.Text))).Show();
 
+        }
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            pnlBunifu.Visible = false;
+            bunifuTransitionOpen.Show(pnlBunifuCerrao);
+            txtFuncion.Width = 812;
+        }
+
+        private void btnAbrir_Click(object sender, EventArgs e)
+        {
+            pnlBunifuCerrao.Visible = false;
+            bunifuTransitionOpen.Show(pnlBunifu);
+            txtFuncion.Width = 479;
+        }
+
+        private void bunifuButton12_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "x";
+        }
+
+        private void bunifuButton10_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "(";
+        }
+
+        // Hacer un swich:  1 = txtFuncion
+        //                  2 = txta
+        //                  3 = txtb
+        // con el objetivo de buscar el focus de cada txt
+
+        private string getLastString()
+        {
+            string r = txtFuncion.Text;
+
+            return r;
+        }
+
+        private void bunifuButton11_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + ")";
+        }
+
+        private void bunifuButton21_Click(object sender, EventArgs e)
+        {
+            if (getLastString().Length - 1 < 0)
+            {
+                return;
+            }
+            else
+            {
+                txtFuncion.Text = getLastString().Remove(getLastString().Length - 1);
+            }
+
+
+        }
+
+        private void bunifuButton44_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + " ";
+        }
+
+        private void bunifuButton15_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "[";
+        }
+
+        private void bunifuButton13_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "]";
+        }
+
+        private void bunifuButton16_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "/";
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "7";
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "8";
+        }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "9";
+        }
+
+        private void bunifuButton17_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "*";
+        }
+
+        private void bunifuButton23_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "^";
+        }
+
+        private void bunifuButton3_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "4";
+        }
+
+        private void bunifuButton4_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "5";
+        }
+
+        private void bunifuButton5_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "6";
+        }
+
+        private void bunifuButton18_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "+";
+        }
+
+        private void bunifuButton6_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "1";
+        }
+
+        private void bunifuButton7_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "2";
+        }
+
+        private void bunifuButton8_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "3";
+        }
+
+        private void bunifuButton19_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "-";
+        }
+
+        private void bunifuButton22_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = "";
+        }
+
+        private void bunifuButton9_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "0";
+        }
+
+        private void bunifuButton20_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "root(indice,radicando)";
+        }
+
+        private void bunifuButton24_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "cos";
+        }
+
+        private void bunifuButton26_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "sin";
+        }
+
+        private void bunifuButton25_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "tan";
+        }
+
+        private void bunifuButton27_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "sec";
+        }
+
+        private void bunifuButton29_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "cot";
+        }
+
+        private void bunifuButton34_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "arcsin";
+        }
+
+        private void bunifuButton36_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "arctan";
+        }
+
+        private void bunifuButton37_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "arccot";
+        }
+
+        private void bunifuButton38_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "arcsec";
+        }
+
+        private void bunifuButton28_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "csc";
+        }
+
+        private void bunifuButton35_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "arccos";
+        }
+
+        private void bunifuButton39_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "arccsc";
+        }
+
+        private void bunifuButton30_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "pi";
+        }
+
+        private void bunifuButton40_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "log10";
+        }
+
+        private void bunifuButton41_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "log2";
+        }
+
+        private void bunifuButton33_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + ".";
+        }
+
+        private void bunifuButton42_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "ln";
+        }
+
+        private void bunifuButton31_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Text = getLastString() + "e";
+        }
+
+        private void bunifuButton45_Click(object sender, EventArgs e)
+        {
+            string a = txtFuncion.Text;
+            Function Fx = new Function($@"Fx(x) = {a}");
+            Expression e1 = new Expression("Fx(1)", Fx);
+            txtFuncion.Text = e1.getExpressionString() + " = " + e1.calculate().ToString();
+        }
+
+        private void txtFuncion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+               (e.KeyChar != '.') && !(e.KeyChar == '*') && !(e.KeyChar == '+') && !(e.KeyChar == '-') && !(e.KeyChar == '/') && !(e.KeyChar == '^') && !(e.KeyChar == 'x') && !(e.KeyChar == '(')
+               && !(e.KeyChar == ')') && !(e.KeyChar == '[') && !(e.KeyChar == ']'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
