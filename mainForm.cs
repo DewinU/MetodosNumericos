@@ -107,12 +107,12 @@ namespace MetodosNumericos
 
         private void bunifuButton7_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new MetodoJacobi());
         }
 
         private void bunifuButton6_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new MetodoSeidel());
         }
 
         private void bunifuButton5_Click(object sender, EventArgs e)
