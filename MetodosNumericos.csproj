@@ -201,6 +201,18 @@
     <Compile Include="Forms\GraficoForm.Designer.cs">
       <DependentUpon>GraficoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SecanteCalculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SecanteCalculo.Designer.cs">
+      <DependentUpon>SecanteCalculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SecanteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SecanteForm.Designer.cs">
+      <DependentUpon>SecanteForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,6 +221,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\BiseccionCalculo.resx">
+      <DependentUpon>BiseccionCalculo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\EliminacionGaussiana.resx">
       <DependentUpon>EliminacionGaussiana.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,6 +232,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MetodoSeidel.resx">
       <DependentUpon>MetodoSeidel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReglaFalsaForm.resx">
+      <DependentUpon>ReglaFalsaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SecanteCalculo.resx">
+      <DependentUpon>SecanteCalculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SecanteForm.resx">
+      <DependentUpon>SecanteForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>

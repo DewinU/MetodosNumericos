@@ -92,7 +92,7 @@ namespace MetodosNumericos
 
         private void bunifuButton3_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new SecanteForm());
         }
 
         private void bunifuButton4_Click(object sender, EventArgs e)
@@ -130,8 +130,6 @@ namespace MetodosNumericos
             {
                 this.WindowState = FormWindowState.Normal;
             }
-
-
         }
 
         private void bunifuButton10_Click(object sender, EventArgs e)
