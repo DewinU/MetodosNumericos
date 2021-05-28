@@ -46,7 +46,6 @@ namespace MetodosNumericos.Forms
             //-----------------------------------------------
             // h(x)
 
-
             for (float i = a; i <= b; i = ((float)(i + 0.5)))
             {
                 Expression e1 = new Expression($"Fx({i})", hx);
@@ -131,7 +130,6 @@ namespace MetodosNumericos.Forms
 
         private void btnAbrir_Click(object sender, EventArgs e)
         {
-
             label1.Location = new System.Drawing.Point(262, 97);
             txtB.Location = new System.Drawing.Point(256, 130);
             txtB.Size = new System.Drawing.Size(200, 37);
@@ -158,7 +156,6 @@ namespace MetodosNumericos.Forms
                 default:
                     break;
             }
-
         }
 
         private void bunifuButton10_Click(object sender, EventArgs e)
@@ -973,8 +970,6 @@ namespace MetodosNumericos.Forms
                 txtResult.Text = e1.getExpressionString() + " = " + e1.calculate().ToString() + " " + e2.getExpressionString() + " = " + e2.calculate().ToString() + " " + "Falso";
             }
         }
-
-
 
         private void txtFuncion_KeyPress(object sender, KeyPressEventArgs e)
         {

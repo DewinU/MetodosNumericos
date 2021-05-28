@@ -221,8 +221,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\BiseccionCalculo.resx">
-      <DependentUpon>BiseccionCalculo.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\ReglaFalsaForm.resx">
+      <DependentUpon>ReglaFalsaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EliminacionGaussiana.resx">
       <DependentUpon>EliminacionGaussiana.cs</DependentUpon>
@@ -232,9 +232,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MetodoSeidel.resx">
       <DependentUpon>MetodoSeidel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ReglaFalsaForm.resx">
-      <DependentUpon>ReglaFalsaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SecanteCalculo.resx">
       <DependentUpon>SecanteCalculo.cs</DependentUpon>
