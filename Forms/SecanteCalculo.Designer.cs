@@ -1,7 +1,7 @@
 ﻿
 namespace MetodosNumericos.Forms
 {
-    partial class BiseccionCalculo
+    partial class SecanteCalculo
     {
         /// <summary>
         /// Required designer variable.
@@ -36,11 +36,7 @@ namespace MetodosNumericos.Forms
             this.dataGridView = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.clmIteracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmPm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmFa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmFpm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmFaxFpm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmFuncion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmError = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmCriterio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -52,8 +48,8 @@ namespace MetodosNumericos.Forms
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(924, 52);
-            this.panel1.TabIndex = 0;
+            this.panel1.Size = new System.Drawing.Size(920, 52);
+            this.panel1.TabIndex = 2;
             // 
             // dataGridView
             // 
@@ -83,11 +79,7 @@ namespace MetodosNumericos.Forms
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clmIteracion,
             this.clmA,
-            this.clmB,
-            this.clmPm,
-            this.clmFa,
-            this.clmFpm,
-            this.clmFaxFpm,
+            this.clmFuncion,
             this.clmError,
             this.clmCriterio});
             this.dataGridView.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
@@ -121,14 +113,14 @@ namespace MetodosNumericos.Forms
             this.dataGridView.HeaderBackColor = System.Drawing.Color.DarkSlateGray;
             this.dataGridView.HeaderBgColor = System.Drawing.Color.Empty;
             this.dataGridView.HeaderForeColor = System.Drawing.Color.White;
-            this.dataGridView.Location = new System.Drawing.Point(25, 141);
+            this.dataGridView.Location = new System.Drawing.Point(26, 120);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowHeadersVisible = false;
             this.dataGridView.RowTemplate.Height = 40;
             this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView.Size = new System.Drawing.Size(870, 356);
-            this.dataGridView.TabIndex = 1;
+            this.dataGridView.TabIndex = 3;
             this.dataGridView.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.DarkSlateGray;
             // 
             // clmIteracion
@@ -139,39 +131,15 @@ namespace MetodosNumericos.Forms
             // 
             // clmA
             // 
-            this.clmA.HeaderText = "A";
+            this.clmA.HeaderText = "Xi + 1";
             this.clmA.Name = "clmA";
             this.clmA.ReadOnly = true;
             // 
-            // clmB
+            // clmFuncion
             // 
-            this.clmB.HeaderText = "B";
-            this.clmB.Name = "clmB";
-            this.clmB.ReadOnly = true;
-            // 
-            // clmPm
-            // 
-            this.clmPm.HeaderText = "PM";
-            this.clmPm.Name = "clmPm";
-            this.clmPm.ReadOnly = true;
-            // 
-            // clmFa
-            // 
-            this.clmFa.HeaderText = "F(A)";
-            this.clmFa.Name = "clmFa";
-            this.clmFa.ReadOnly = true;
-            // 
-            // clmFpm
-            // 
-            this.clmFpm.HeaderText = "F(PM)";
-            this.clmFpm.Name = "clmFpm";
-            this.clmFpm.ReadOnly = true;
-            // 
-            // clmFaxFpm
-            // 
-            this.clmFaxFpm.HeaderText = "F(A) x F(Pm)";
-            this.clmFaxFpm.Name = "clmFaxFpm";
-            this.clmFaxFpm.ReadOnly = true;
+            this.clmFuncion.HeaderText = "F(Xi)";
+            this.clmFuncion.Name = "clmFuncion";
+            this.clmFuncion.ReadOnly = true;
             // 
             // clmError
             // 
@@ -185,34 +153,28 @@ namespace MetodosNumericos.Forms
             this.clmCriterio.Name = "clmCriterio";
             this.clmCriterio.ReadOnly = true;
             // 
-            // BiseccionCalculo
+            // SecanteCalculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(924, 529);
+            this.ClientSize = new System.Drawing.Size(920, 548);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.panel1);
-            this.Name = "BiseccionCalculo";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BiseccionCalculo";
-            this.Load += new System.EventHandler(this.BiseccionCalculo_Load);
+            this.Name = "SecanteCalculo";
+            this.Text = "SecanteCalculo";
+            this.Load += new System.EventHandler(this.SecanteCalculo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
         private System.Windows.Forms.Panel panel1;
         private Bunifu.UI.WinForms.BunifuDataGridView dataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmIteracion;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmB;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmPm;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmFa;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmFpm;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmFaxFpm;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmFuncion;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmError;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmCriterio;
     }
