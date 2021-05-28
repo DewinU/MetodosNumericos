@@ -14,7 +14,7 @@ namespace MetodosNumericos.Forms
         }
 
         byte fx = 0;
-        string f,h,g;
+        string f, h, g;
         double a;
         double b;
         double error;
@@ -45,7 +45,6 @@ namespace MetodosNumericos.Forms
 
             //-----------------------------------------------
             // h(x)
-            
 
             for (float i = a; i <= b; i = ((float)(i + 0.5)))
             {
@@ -131,7 +130,6 @@ namespace MetodosNumericos.Forms
 
         private void btnAbrir_Click(object sender, EventArgs e)
         {
-            
             label1.Location = new System.Drawing.Point(262, 97);
             txtB.Location = new System.Drawing.Point(256, 130);
             txtB.Size = new System.Drawing.Size(200, 37);
@@ -158,12 +156,24 @@ namespace MetodosNumericos.Forms
                 default:
                     break;
             }
-            
         }
 
         private void bunifuButton10_Click(object sender, EventArgs e)
         {
-            txtFuncion.Text = getLastString() + "(";
+            switch (fx)
+            {
+                case 1:
+                    txtFuncion.Text = getLastString() + "(";
+                    break;
+                case 2:
+                    txthx.Text = getLastString() + "(";
+                    break;
+                case 3:
+                    txtgx.Text = getLastString() + "(";
+                    break;
+                default:
+                    break;
+            }
         }
 
         // Hacer un swich:  1 = txtFuncion
@@ -216,7 +226,20 @@ namespace MetodosNumericos.Forms
             }
             else
             {
-                txtFuncion.Text = getLastString().Remove(getLastString().Length - 1);
+                switch (fx)
+                {
+                    case 1:
+                        txtFuncion.Text = getLastString().Remove(getLastString().Length - 1);
+                        break;
+                    case 2:
+                        txthx.Text = getLastString().Remove(getLastString().Length - 1);
+                        break;
+                    case 3:
+                        txtgx.Text = getLastString().Remove(getLastString().Length - 1);
+                        break;
+                    default:
+                        break;
+                }
             }
 
 
@@ -533,13 +556,13 @@ namespace MetodosNumericos.Forms
             switch (fx)
             {
                 case 1:
-                    txtFuncion.Text = getLastString() + "";
+                    txtFuncion.Text = "";
                     break;
                 case 2:
-                    txthx.Text = getLastString() + "";
+                    txthx.Text = "";
                     break;
                 case 3:
-                    txtgx.Text = getLastString() + "";
+                    txtgx.Text = "";
                     break;
                 default:
                     break;
@@ -947,8 +970,6 @@ namespace MetodosNumericos.Forms
                 txtResult.Text = e1.getExpressionString() + " = " + e1.calculate().ToString() + " " + e2.getExpressionString() + " = " + e2.calculate().ToString() + " " + "Falso";
             }
         }
-
-        
 
         private void txtFuncion_KeyPress(object sender, KeyPressEventArgs e)
         {
