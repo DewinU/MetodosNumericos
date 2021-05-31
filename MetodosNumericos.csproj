@@ -183,6 +183,12 @@
     <Compile Include="Forms\MetodoSeidel.Designer.cs">
       <DependentUpon>MetodoSeidel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ReglaFalsaCalculoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReglaFalsaCalculoForm.Designer.cs">
+      <DependentUpon>ReglaFalsaCalculoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ReglaFalsaForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,7 +232,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BiseccionForm.resx">
       <DependentUpon>BiseccionForm.cs</DependentUpon>
-     </EmbeddedResource>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReglaFalsaCalculoForm.resx">
+      <DependentUpon>ReglaFalsaCalculoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ReglaFalsaForm.resx">
       <DependentUpon>ReglaFalsaForm.cs</DependentUpon>
     </EmbeddedResource>
