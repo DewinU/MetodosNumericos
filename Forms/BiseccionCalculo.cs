@@ -24,8 +24,7 @@ namespace MetodosNumericos.Forms
 
         private void BiseccionCalculo_Load(object sender, EventArgs e)
         {
-            Console.WriteLine(f);
-            Console.WriteLine(error);
+           
             Function Fx = new Function($@"Fx(x) = {f}");
             for (int i = 0; i < 100; i++)
             {

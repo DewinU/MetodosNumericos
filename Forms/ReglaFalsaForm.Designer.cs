@@ -182,10 +182,6 @@ namespace MetodosNumericos.Forms
             this.label3 = new System.Windows.Forms.Label();
             this.txtag = new System.Windows.Forms.TextBox();
             this.txtFuncion = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.txtB = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -194,6 +190,10 @@ namespace MetodosNumericos.Forms
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtResult = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel2.SuspendLayout();
             this.pnlBunifuCerrao.SuspendLayout();
             this.pnlBunifu.SuspendLayout();
@@ -4189,6 +4189,7 @@ namespace MetodosNumericos.Forms
             // 
             // pnlBunifuCerrao
             // 
+            this.pnlBunifuCerrao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlBunifuCerrao.BackColor = System.Drawing.Color.Transparent;
             this.pnlBunifuCerrao.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlBunifuCerrao.BackgroundImage")));
             this.pnlBunifuCerrao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -4309,12 +4310,12 @@ namespace MetodosNumericos.Forms
             this.bunifuLabel7.AutoEllipsis = false;
             this.bunifuLabel7.CursorType = null;
             this.bunifuTransitionOpen.SetDecoration(this.bunifuLabel7, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuLabel7.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel7.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel7.Location = new System.Drawing.Point(9, 343);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel7.Size = new System.Drawing.Size(23, 40);
+            this.bunifuLabel7.Size = new System.Drawing.Size(25, 37);
             this.bunifuLabel7.TabIndex = 6;
             this.bunifuLabel7.Text = "O";
             this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -4326,12 +4327,12 @@ namespace MetodosNumericos.Forms
             this.bunifuLabel6.AutoEllipsis = false;
             this.bunifuLabel6.CursorType = null;
             this.bunifuTransitionOpen.SetDecoration(this.bunifuLabel6, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuLabel6.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel6.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel6.Location = new System.Drawing.Point(10, 297);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(19, 40);
+            this.bunifuLabel6.Size = new System.Drawing.Size(23, 37);
             this.bunifuLabel6.TabIndex = 5;
             this.bunifuLabel6.Text = "C";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -4343,12 +4344,12 @@ namespace MetodosNumericos.Forms
             this.bunifuLabel5.AutoEllipsis = false;
             this.bunifuLabel5.CursorType = null;
             this.bunifuTransitionOpen.SetDecoration(this.bunifuLabel5, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuLabel5.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel5.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel5.Location = new System.Drawing.Point(15, 251);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(12, 40);
+            this.bunifuLabel5.Size = new System.Drawing.Size(8, 37);
             this.bunifuLabel5.TabIndex = 4;
             this.bunifuLabel5.Text = "I";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -4360,12 +4361,12 @@ namespace MetodosNumericos.Forms
             this.bunifuLabel4.AutoEllipsis = false;
             this.bunifuLabel4.CursorType = null;
             this.bunifuTransitionOpen.SetDecoration(this.bunifuLabel4, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuLabel4.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel4.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel4.Location = new System.Drawing.Point(13, 205);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(17, 40);
+            this.bunifuLabel4.Size = new System.Drawing.Size(20, 37);
             this.bunifuLabel4.TabIndex = 3;
             this.bunifuLabel4.Text = "F";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -4377,12 +4378,12 @@ namespace MetodosNumericos.Forms
             this.bunifuLabel3.AutoEllipsis = false;
             this.bunifuLabel3.CursorType = null;
             this.bunifuTransitionOpen.SetDecoration(this.bunifuLabel3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuLabel3.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel3.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel3.Location = new System.Drawing.Point(12, 156);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(20, 40);
+            this.bunifuLabel3.Size = new System.Drawing.Size(22, 37);
             this.bunifuLabel3.TabIndex = 2;
             this.bunifuLabel3.Text = "Á";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -4394,12 +4395,12 @@ namespace MetodosNumericos.Forms
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.CursorType = null;
             this.bunifuTransitionOpen.SetDecoration(this.bunifuLabel2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuLabel2.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel2.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel2.Location = new System.Drawing.Point(11, 110);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(22, 40);
+            this.bunifuLabel2.Size = new System.Drawing.Size(22, 37);
             this.bunifuLabel2.TabIndex = 1;
             this.bunifuLabel2.Text = "R";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -4412,12 +4413,12 @@ namespace MetodosNumericos.Forms
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuTransitionOpen.SetDecoration(this.bunifuLabel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuLabel1.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel1.Location = new System.Drawing.Point(10, 64);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(22, 40);
+            this.bunifuLabel1.Size = new System.Drawing.Size(25, 37);
             this.bunifuLabel1.TabIndex = 0;
             this.bunifuLabel1.Text = "G";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -4425,6 +4426,7 @@ namespace MetodosNumericos.Forms
             // 
             // pnlBunifu
             // 
+            this.pnlBunifu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlBunifu.BackColor = System.Drawing.Color.Transparent;
             this.pnlBunifu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlBunifu.BackgroundImage")));
             this.pnlBunifu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -4463,12 +4465,12 @@ namespace MetodosNumericos.Forms
             this.bunifuLabel14.AutoEllipsis = false;
             this.bunifuLabel14.CursorType = null;
             this.bunifuTransitionOpen.SetDecoration(this.bunifuLabel14, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuLabel14.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel14.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel14.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel14.Location = new System.Drawing.Point(234, 10);
             this.bunifuLabel14.Name = "bunifuLabel14";
             this.bunifuLabel14.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel14.Size = new System.Drawing.Size(23, 40);
+            this.bunifuLabel14.Size = new System.Drawing.Size(25, 37);
             this.bunifuLabel14.TabIndex = 47;
             this.bunifuLabel14.Text = "O";
             this.bunifuLabel14.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -4480,12 +4482,12 @@ namespace MetodosNumericos.Forms
             this.bunifuLabel13.AutoEllipsis = false;
             this.bunifuLabel13.CursorType = null;
             this.bunifuTransitionOpen.SetDecoration(this.bunifuLabel13, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuLabel13.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel13.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel13.Location = new System.Drawing.Point(216, 10);
             this.bunifuLabel13.Name = "bunifuLabel13";
             this.bunifuLabel13.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel13.Size = new System.Drawing.Size(19, 40);
+            this.bunifuLabel13.Size = new System.Drawing.Size(23, 37);
             this.bunifuLabel13.TabIndex = 47;
             this.bunifuLabel13.Text = "C";
             this.bunifuLabel13.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -4497,12 +4499,12 @@ namespace MetodosNumericos.Forms
             this.bunifuLabel12.AutoEllipsis = false;
             this.bunifuLabel12.CursorType = null;
             this.bunifuTransitionOpen.SetDecoration(this.bunifuLabel12, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuLabel12.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel12.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel12.Location = new System.Drawing.Point(205, 10);
             this.bunifuLabel12.Name = "bunifuLabel12";
             this.bunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel12.Size = new System.Drawing.Size(12, 40);
+            this.bunifuLabel12.Size = new System.Drawing.Size(8, 37);
             this.bunifuLabel12.TabIndex = 47;
             this.bunifuLabel12.Text = "I";
             this.bunifuLabel12.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -4514,12 +4516,12 @@ namespace MetodosNumericos.Forms
             this.bunifuLabel11.AutoEllipsis = false;
             this.bunifuLabel11.CursorType = null;
             this.bunifuTransitionOpen.SetDecoration(this.bunifuLabel11, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuLabel11.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel11.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel11.Location = new System.Drawing.Point(189, 10);
             this.bunifuLabel11.Name = "bunifuLabel11";
             this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel11.Size = new System.Drawing.Size(17, 40);
+            this.bunifuLabel11.Size = new System.Drawing.Size(20, 37);
             this.bunifuLabel11.TabIndex = 47;
             this.bunifuLabel11.Text = "F";
             this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -4531,12 +4533,12 @@ namespace MetodosNumericos.Forms
             this.bunifuLabel10.AutoEllipsis = false;
             this.bunifuLabel10.CursorType = null;
             this.bunifuTransitionOpen.SetDecoration(this.bunifuLabel10, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuLabel10.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel10.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel10.Location = new System.Drawing.Point(171, 10);
             this.bunifuLabel10.Name = "bunifuLabel10";
             this.bunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel10.Size = new System.Drawing.Size(20, 40);
+            this.bunifuLabel10.Size = new System.Drawing.Size(22, 37);
             this.bunifuLabel10.TabIndex = 47;
             this.bunifuLabel10.Text = "Á";
             this.bunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -4548,12 +4550,12 @@ namespace MetodosNumericos.Forms
             this.bunifuLabel9.AutoEllipsis = false;
             this.bunifuLabel9.CursorType = null;
             this.bunifuTransitionOpen.SetDecoration(this.bunifuLabel9, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuLabel9.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel9.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel9.Location = new System.Drawing.Point(150, 10);
             this.bunifuLabel9.Name = "bunifuLabel9";
             this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel9.Size = new System.Drawing.Size(22, 40);
+            this.bunifuLabel9.Size = new System.Drawing.Size(22, 37);
             this.bunifuLabel9.TabIndex = 47;
             this.bunifuLabel9.Text = "R";
             this.bunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -4566,12 +4568,12 @@ namespace MetodosNumericos.Forms
             this.bunifuLabel8.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel8.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuTransitionOpen.SetDecoration(this.bunifuLabel8, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuLabel8.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel8.ForeColor = System.Drawing.Color.Black;
             this.bunifuLabel8.Location = new System.Drawing.Point(129, 10);
             this.bunifuLabel8.Name = "bunifuLabel8";
             this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel8.Size = new System.Drawing.Size(22, 40);
+            this.bunifuLabel8.Size = new System.Drawing.Size(25, 37);
             this.bunifuLabel8.TabIndex = 47;
             this.bunifuLabel8.Text = "G";
             this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -4731,6 +4733,7 @@ namespace MetodosNumericos.Forms
             this.txtgx.TextPlaceholder = "g(x)";
             this.txtgx.UseSystemPasswordChar = false;
             this.txtgx.WordWrap = true;
+            this.txtgx.TextChanged += new System.EventHandler(this.txtgx_TextChanged);
             this.txtgx.Click += new System.EventHandler(this.btngx_Click);
             // 
             // btnClose
@@ -5094,26 +5097,6 @@ namespace MetodosNumericos.Forms
             this.txtFuncion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFuncion_KeyPress);
             this.txtFuncion.Click += new System.EventHandler(this.txtFuncion_Click);
             // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 10;
-            this.bunifuElipse1.TargetControl = this.pnlBunifuCerrao;
-            // 
-            // bunifuElipse2
-            // 
-            this.bunifuElipse2.ElipseRadius = 10;
-            this.bunifuElipse2.TargetControl = this.pnlBunifu;
-            // 
-            // bunifuElipse3
-            // 
-            this.bunifuElipse3.ElipseRadius = 10;
-            this.bunifuElipse3.TargetControl = this.txtgx;
-            // 
-            // bunifuElipse4
-            // 
-            this.bunifuElipse4.ElipseRadius = 10;
-            this.bunifuElipse4.TargetControl = this.txthx;
-            // 
             // txtB
             // 
             this.txtB.AcceptsReturn = false;
@@ -5460,6 +5443,26 @@ namespace MetodosNumericos.Forms
             this.txtResult.UseSystemPasswordChar = false;
             this.txtResult.WordWrap = true;
             this.txtResult.TextChanged += new System.EventHandler(this.txtResult_TextChanged);
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 10;
+            this.bunifuElipse1.TargetControl = this.pnlBunifuCerrao;
+            // 
+            // bunifuElipse2
+            // 
+            this.bunifuElipse2.ElipseRadius = 10;
+            this.bunifuElipse2.TargetControl = this.pnlBunifu;
+            // 
+            // bunifuElipse3
+            // 
+            this.bunifuElipse3.ElipseRadius = 10;
+            this.bunifuElipse3.TargetControl = this.txtgx;
+            // 
+            // bunifuElipse4
+            // 
+            this.bunifuElipse4.ElipseRadius = 10;
+            this.bunifuElipse4.TargetControl = this.txthx;
             // 
             // ReglaFalsaForm
             // 

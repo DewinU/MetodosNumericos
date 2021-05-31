@@ -221,6 +221,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\BiseccionForm.resx">
+      <DependentUpon>BiseccionForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ReglaFalsaForm.resx">
       <DependentUpon>ReglaFalsaForm.cs</DependentUpon>
     </EmbeddedResource>
