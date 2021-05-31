@@ -809,7 +809,7 @@ namespace MetodosNumericos.Forms
             Function Fx = new Function($@"Fx(x) = {f}");
             Argument x = new Argument($"x = {txtA.Text}");
             Expression e1 = new Expression($"Fx({a})", Fx);
-            Expression e2 = new Expression($"der({txtFuncion.Text}, x)", x);
+            Expression e2 = new Expression($"der({f}, x)", x);
             double result = e1.calculate() * e2.calculate();
 
             if (e1.calculate().ToString().Equals("NaN"))
@@ -819,7 +819,7 @@ namespace MetodosNumericos.Forms
                 return;
 
             }
-            txtResult.Text = $"{e1.getExpressionString()} = {e1.calculate()}    Fx'({txtA.Text}) = {e2.calculate()}";
+            txtResult.Text = $"{e1.getExpressionString()} = {e1.calculate()}    Fx'({a}) = {e2.calculate()}";
         }
 
         //Metodos de validacion de textbox
@@ -879,7 +879,7 @@ namespace MetodosNumericos.Forms
             }
 
             NewtonCalculo bs = new NewtonCalculo();
-            bs.getDatos(f, a, b, error);
+            bs.getDatos(f, a,error);
             bs.ShowDialog();
         }
 

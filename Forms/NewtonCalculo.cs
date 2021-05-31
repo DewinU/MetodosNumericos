@@ -15,7 +15,9 @@ namespace MetodosNumericos.Forms
     {
         string f;
         double a;
+        double b;
         double error;
+        Argument x;
         public NewtonCalculo()
         {
             InitializeComponent();
@@ -25,82 +27,61 @@ namespace MetodosNumericos.Forms
         {
            
             Function Fx = new Function($@"Fx(x) = {f}");
-            //for (int i = 0; i < 100; i++)
-            //{
-            //    dataGridView.Rows.Add();
-            //    if (i == 0)
-            //    {
-            //        Expression e1 = new Expression($"Fx({a})", Fx);
-            //        dataGridView.Rows[i].Cells["clmIteracion"].Value = i;
-            //        dataGridView.Rows[i].Cells["clmA"].Value = a;
-            //        dataGridView.Rows[i].Cells["clmB"].Value = b;
-            //        dataGridView.Rows[i].Cells["clmPm"].Value = (a + b) / 2;
-            //        double ea = double.Parse(dataGridView.Rows[i].Cells["clmPm"].Value.ToString());
-            //        Expression e2 = new Expression($"Fx({ea})", Fx);
-            //        dataGridView.Rows[i].Cells["clmFa"].Value = e1.calculate();
-            //        dataGridView.Rows[i].Cells["clmFpm"].Value = e2.calculate();
-            //        dataGridView.Rows[i].Cells["clmFaxFpm"].Value = e1.calculate() * e2.calculate();
-            //        dataGridView.Rows[i].Cells["clmError"].Value = 0;
-            //        dataGridView.Rows[i].Cells["clmCriterio"].Value = error;
+            for (int i = 0; i < 100; i++)
+            {
+                dataGridView.Rows.Add();
+                if (i == 0)
+                {
+                    Expression e1 = new Expression($"Fx({a})", Fx);
+                    dataGridView.Rows[i].Cells["clmIteracion"].Value = i;
+                    dataGridView.Rows[i].Cells["clmXn"].Value = a;
+                    Expression e2 = new Expression($"der({f}, x)", x);
+                    dataGridView.Rows[i].Cells["clmfx"].Value = e1.calculate();
+                    dataGridView.Rows[i].Cells["clmfxderivate"].Value = e2.calculate();
+                    dataGridView.Rows[i].Cells["clmError"].Value = 0;
+                    dataGridView.Rows[i].Cells["clmCriterio"].Value = error;
 
 
 
-            //    }
-            //    else
-            //    {
+                }
+                else
+                {
 
-            //        dataGridView.Rows[i].Cells["clmIteracion"].Value = i;
-            //        if ((double.Parse(dataGridView.Rows[i - 1].Cells["clmFaxFpm"].Value.ToString())) < 0)
-            //        {
-            //            dataGridView.Rows[i].Cells["clmA"].Value = dataGridView.Rows[i - 1].Cells["clmA"].Value;
-            //        }
-            //        else
-            //        {
-            //            dataGridView.Rows[i].Cells["clmA"].Value = dataGridView.Rows[i - 1].Cells["clmPm"].Value;
-            //        }
+                    dataGridView.Rows[i].Cells["clmIteracion"].Value = i;
+                    dataGridView.Rows[i].Cells["clmXn"].Value = (double.Parse(dataGridView.Rows[i - 1].Cells["clmXn"].Value.ToString()))-((double.Parse(dataGridView.Rows[i - 1].Cells["clmfx"].Value.ToString()))/ (double.Parse(dataGridView.Rows[i - 1].Cells["clmfxderivate"].Value.ToString())));
+                    Expression e3 = new Expression($"Fx({double.Parse(dataGridView.Rows[i].Cells["clmXn"].Value.ToString())})", Fx);
+                    dataGridView.Rows[i].Cells["clmfx"].Value = e3.calculate();
+                    //Expression e4 = new Expression($"Fx({double.Parse(dataGridView.Rows[i].Cells["clmFx"].Value.ToString())})", Fx);
+                    x = new Argument($"x = {dataGridView.Rows[i].Cells["clmXn"].Value}");
+                    Expression e4 = new Expression($"der({f}, x)", x);
 
-            //        if ((double.Parse(dataGridView.Rows[i - 1].Cells["clmFaxFpm"].Value.ToString())) < 0)
-            //        {
-            //            dataGridView.Rows[i].Cells["clmB"].Value = dataGridView.Rows[i - 1].Cells["clmPm"].Value;
-            //        }
-            //        else
-            //        {
-            //            dataGridView.Rows[i].Cells["clmB"].Value = dataGridView.Rows[i - 1].Cells["clmB"].Value;
-            //        }
+                    dataGridView.Rows[i].Cells["clmfxderivate"].Value = e4.calculate();
+                    dataGridView.Rows[i].Cells["clmError"].Value = Math.Abs(double.Parse(dataGridView.Rows[i].Cells["clmXn"].Value.ToString()) - double.Parse(dataGridView.Rows[i - 1].Cells["clmXn"].Value.ToString()));
 
-            //        dataGridView.Rows[i].Cells["clmPm"].Value = (double.Parse(dataGridView.Rows[i].Cells["clmA"].Value.ToString()) + double.Parse(dataGridView.Rows[i].Cells["clmB"].Value.ToString())) / 2;
-            //        Expression e3 = new Expression($"Fx({double.Parse(dataGridView.Rows[i].Cells["clmA"].Value.ToString())})", Fx);
-            //        dataGridView.Rows[i].Cells["clmFa"].Value = e3.calculate();
-            //        Expression e4 = new Expression($"Fx({double.Parse(dataGridView.Rows[i].Cells["clmPm"].Value.ToString())})", Fx);
-            //        dataGridView.Rows[i].Cells["clmFpm"].Value = e4.calculate();
-            //        dataGridView.Rows[i].Cells["clmFaxFpm"].Value = e3.calculate() * e4.calculate();
-            //        dataGridView.Rows[i].Cells["clmError"].Value = Math.Abs(double.Parse(dataGridView.Rows[i].Cells["clmFpm"].Value.ToString()) - double.Parse(dataGridView.Rows[i - 1].Cells["clmFpm"].Value.ToString()));
+                    if ((double.Parse(dataGridView.Rows[i].Cells["clmError"].Value.ToString()) < error))
+                    {
 
-            //        if ((double.Parse(dataGridView.Rows[i].Cells["clmError"].Value.ToString()) < error))
-            //        {
+                        dataGridView.Rows[i].Cells["clmCriterio"].Value = "Verdadero";
+                        return;
+                    }
+                    else
+                    {
+                        dataGridView.Rows[i].Cells["clmCriterio"].Value = "Falso";
 
-            //            dataGridView.Rows[i].Cells["clmCriterio"].Value = "Verdadero";
-            //            return;
-            //        }
-            //        else
-            //        {
-            //            dataGridView.Rows[i].Cells["clmCriterio"].Value = "Falso";
-
-            //        }
+                    }
 
 
-            //    }
-            //}
+                }
+            }
 
         }
 
-        public void getDatos(string funcion, double a, double b, double error)
+        public void getDatos(string funcion, double a, double error)
         {
-
             f = funcion;
             this.a = a;
             this.error = error;
-
+            x = new Argument($"x = {a}");
         }
     }
 }
