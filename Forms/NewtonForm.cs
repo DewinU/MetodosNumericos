@@ -6,7 +6,7 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 namespace MetodosNumericos.Forms
 {
-    public partial class SecanteForm : Form
+    public partial class NewtonForm : Form
     {
         //Variables para calculo
         byte fx = 0;
@@ -19,7 +19,7 @@ namespace MetodosNumericos.Forms
         ToolTip tt = null;
         Point tl = Point.Empty;
 
-        public SecanteForm()
+        public NewtonForm()
         {
             InitializeComponent();
         }
@@ -805,11 +805,11 @@ namespace MetodosNumericos.Forms
                     break;
             }
             a = Double.Parse(txtA.Text);
-            b = Double.Parse(txtB.Text);
             error = double.Parse(txtError.Text);
             Function Fx = new Function($@"Fx(x) = {f}");
+            Argument x = new Argument($"x = {txtA.Text}");
             Expression e1 = new Expression($"Fx({a})", Fx);
-            Expression e2 = new Expression($"Fx({b})", Fx);
+            Expression e2 = new Expression($"der({txtFuncion.Text}, x)", x);
             double result = e1.calculate() * e2.calculate();
 
             if (e1.calculate().ToString().Equals("NaN"))
@@ -819,7 +819,7 @@ namespace MetodosNumericos.Forms
                 return;
 
             }
-            txtResult.Text = e1.getExpressionString() + " = " + e1.calculate().ToString() + "     " + e2.getExpressionString() + " = " + e2.calculate().ToString() + " " + "";
+            txtResult.Text = $"{e1.getExpressionString()} = {e1.calculate()}    Fx'({txtA.Text}) = {e2.calculate()}";
         }
 
         //Metodos de validacion de textbox
@@ -872,13 +872,13 @@ namespace MetodosNumericos.Forms
         //Otros Metodos
         private void btnRaiz_Click(object sender, EventArgs e)
         {
-            if (txtResult.Text == "" || txtError.Text == "" || txtA.Text == "" || txtB.Text == "")
+            if (txtResult.Text == "" || txtError.Text == "" || txtA.Text == "")
             {
                 MessageBox.Show("Alguno de los Campos Requeridos se encuentra Vacio.","Alerta!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            SecanteCalculo bs = new SecanteCalculo();
+            NewtonCalculo bs = new NewtonCalculo();
             bs.getDatos(f, a, b, error);
             bs.ShowDialog();
         }
@@ -907,8 +907,6 @@ namespace MetodosNumericos.Forms
         {
             label1.Location = new System.Drawing.Point(262, 97);
             btnRaiz.Location = new System.Drawing.Point(250, 339);
-            txtB.Location = new System.Drawing.Point(300, 237);
-            txtB.Size = new System.Drawing.Size(200, 37);
             txtA.Size = new System.Drawing.Size(200, 37);
             txtError.Size = new System.Drawing.Size(225, 37);
             pnlBunifuClose.Visible = false;
@@ -921,8 +919,6 @@ namespace MetodosNumericos.Forms
         {
             label1.Location = new System.Drawing.Point(433, 97);
             btnRaiz.Location = new System.Drawing.Point(500, 339);
-            txtB.Location = new System.Drawing.Point(349, 237);
-            txtB.Size = new System.Drawing.Size(296, 37);
             txtA.Size = new System.Drawing.Size(296, 37);
             txtError.Size = new System.Drawing.Size(386, 37);
             txtResult.Width = 805;
@@ -1029,6 +1025,11 @@ namespace MetodosNumericos.Forms
         private void txthx_Click(object sender, EventArgs e)
         {
             fx = 2;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void txtFuncion_Click(object sender, EventArgs e)

@@ -153,6 +153,12 @@
     <Compile Include="Class\GaussSeidel.cs" />
     <Compile Include="Class\Jacobi.cs" />
     <Compile Include="Class\Matriz.cs" />
+    <Compile Include="Forms\NewtonCalculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewtonCalculo.Designer.cs">
+      <DependentUpon>NewtonCalculo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\BiseccionCalculo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,12 +195,6 @@
     <Compile Include="Forms\ReglaFalsaForm.Designer.cs">
       <DependentUpon>ReglaFalsaForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Newton.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Newton.Designer.cs">
-      <DependentUpon>Newton.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\GraficoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +206,12 @@
     </Compile>
     <Compile Include="Forms\SecanteCalculo.Designer.cs">
       <DependentUpon>SecanteCalculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewtonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewtonForm.Designer.cs">
+      <DependentUpon>NewtonForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\SecanteForm.cs">
       <SubType>Form</SubType>
@@ -226,7 +232,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BiseccionForm.resx">
       <DependentUpon>BiseccionForm.cs</DependentUpon>
-     </EmbeddedResource>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewtonCalculo.resx">
+      <DependentUpon>NewtonCalculo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ReglaFalsaForm.resx">
       <DependentUpon>ReglaFalsaForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -241,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SecanteCalculo.resx">
       <DependentUpon>SecanteCalculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewtonForm.resx">
+      <DependentUpon>NewtonForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SecanteForm.resx">
       <DependentUpon>SecanteForm.cs</DependentUpon>
