@@ -996,6 +996,11 @@ namespace MetodosNumericos.Forms
             fx = 2;
         }
 
+        private void txtgx_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void txtFuncion_Click(object sender, EventArgs e)
         {
             fx = 1;
