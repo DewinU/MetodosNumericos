@@ -5475,7 +5475,6 @@ namespace MetodosNumericos.Forms
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtResult);
-            this.Controls.Add(this.txtB);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtA);
@@ -5483,6 +5482,7 @@ namespace MetodosNumericos.Forms
             this.Controls.Add(this.pnlBunifu);
             this.Controls.Add(this.txtFuncion);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.txtB);
             this.bunifuTransitionOpen.SetDecoration(this, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ReglaFalsaForm";
