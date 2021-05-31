@@ -966,6 +966,9 @@ namespace MetodosNumericos.Forms
             {
 
                 txtResult.Text = e1.getExpressionString() + " = " + e1.calculate().ToString() + " " + e2.getExpressionString() + " = " + e2.calculate().ToString() + " " + "Verdadero";
+                ReglaFalsaCalculoForm rf = new ReglaFalsaCalculoForm();
+                rf.getDatos(f, a, b, error);
+                rf.ShowDialog();
             }
             else
             {
