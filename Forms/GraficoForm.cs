@@ -1,4 +1,5 @@
-﻿using System;
+﻿using org.mariuszgromada.math.mxparser;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
@@ -7,25 +8,32 @@ namespace MetodosNumericos.Forms
 {
     public partial class GraficoForm : Form
     {
-        public GraficoForm(float a, float b)
+        public GraficoForm(float a, float b, string h, string g)
         {
             InitializeComponent();
 
-            // X^3 - X^2 + 1
 
-            // X^3
-            //-----------------------------------------------
 
-            for (float i = a; i < b; i = ((float)(i + 0.5)))
+            lblhx.Text = "h(x): " + h;
+            lblgx.Text = "g(x): " + g;
+
+            Function hx = new Function($@"Fx(x) = {h}");
+            Function gx = new Function($@"Fx(x) = {g}");
+
+            // h(x)
+
+            for (float i = a; i <= b; i = ((float)(i + 0.5)))
             {
-                this.chart.Series["g(x)"].Points.AddXY(i, Math.Pow(i, 3));
+                Expression e1 = new Expression($"Fx({i})", gx);
+                this.chart.Series["g(x)"].Points.AddXY(i, float.Parse(e1.calculate().ToString()));
             }
 
             //------------------------------------------------
-            // X^2 - 1
-            for (float i = a; i < b; i = ((float)(i + 0.5)))
+            // g(x)
+            for (float i = a; i <= b; i = ((float)(i + 0.5)))
             {
-                this.chart.Series["h(x)"].Points.AddXY(i, (Math.Pow(i, 2) - 1));
+                Expression e2 = new Expression($"Fx({i})", hx);
+                this.chart.Series["h(x)"].Points.AddXY(i, float.Parse(e2.calculate().ToString()));
             }
 
         }
@@ -72,6 +80,16 @@ namespace MetodosNumericos.Forms
 
             return new RectangleF(CArp.X + pw * IPP.X, CArp.Y + ph * IPP.Y,
                                     pw * IPP.Width, ph * IPP.Height);
+        }
+
+        private void lblgx_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblhx_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

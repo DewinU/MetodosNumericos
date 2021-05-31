@@ -4602,6 +4602,7 @@ namespace MetodosNumericos.Forms
             this.txthx.DefaultFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txthx.DefaultText = "";
             this.txthx.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(73)))), ((int)(((byte)(75)))));
+            this.txthx.ForeColor = System.Drawing.SystemColors.Control;
             this.txthx.HideSelection = true;
             this.txthx.IconLeft = null;
             this.txthx.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -4632,7 +4633,7 @@ namespace MetodosNumericos.Forms
             this.txthx.OnHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.Black;
             stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(73)))), ((int)(((byte)(75)))));
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.ForeColor = System.Drawing.SystemColors.Control;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txthx.OnIdleState = stateProperties4;
             this.txthx.Padding = new System.Windows.Forms.Padding(3);
@@ -4680,6 +4681,7 @@ namespace MetodosNumericos.Forms
             this.txtgx.DefaultFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtgx.DefaultText = "";
             this.txtgx.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(73)))), ((int)(((byte)(75)))));
+            this.txtgx.ForeColor = System.Drawing.SystemColors.Control;
             this.txtgx.HideSelection = true;
             this.txtgx.IconLeft = null;
             this.txtgx.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -4710,7 +4712,7 @@ namespace MetodosNumericos.Forms
             this.txtgx.OnHoverState = stateProperties7;
             stateProperties8.BorderColor = System.Drawing.Color.Black;
             stateProperties8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(73)))), ((int)(((byte)(75)))));
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.ForeColor = System.Drawing.SystemColors.Control;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtgx.OnIdleState = stateProperties8;
             this.txtgx.Padding = new System.Windows.Forms.Padding(3);
