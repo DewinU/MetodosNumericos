@@ -182,10 +182,6 @@ namespace MetodosNumericos.Forms
             this.label3 = new System.Windows.Forms.Label();
             this.txtag = new System.Windows.Forms.TextBox();
             this.txtFuncion = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.txtB = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -194,6 +190,10 @@ namespace MetodosNumericos.Forms
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtResult = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel2.SuspendLayout();
             this.pnlBunifuCerrao.SuspendLayout();
             this.pnlBunifu.SuspendLayout();
@@ -4600,6 +4600,7 @@ namespace MetodosNumericos.Forms
             this.txthx.DefaultFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txthx.DefaultText = "";
             this.txthx.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(73)))), ((int)(((byte)(75)))));
+            this.txthx.ForeColor = System.Drawing.SystemColors.Control;
             this.txthx.HideSelection = true;
             this.txthx.IconLeft = null;
             this.txthx.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -4630,7 +4631,7 @@ namespace MetodosNumericos.Forms
             this.txthx.OnHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.Black;
             stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(73)))), ((int)(((byte)(75)))));
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.ForeColor = System.Drawing.SystemColors.Control;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txthx.OnIdleState = stateProperties4;
             this.txthx.Padding = new System.Windows.Forms.Padding(3);
@@ -4678,6 +4679,7 @@ namespace MetodosNumericos.Forms
             this.txtgx.DefaultFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtgx.DefaultText = "";
             this.txtgx.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(73)))), ((int)(((byte)(75)))));
+            this.txtgx.ForeColor = System.Drawing.SystemColors.Control;
             this.txtgx.HideSelection = true;
             this.txtgx.IconLeft = null;
             this.txtgx.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -4708,7 +4710,7 @@ namespace MetodosNumericos.Forms
             this.txtgx.OnHoverState = stateProperties7;
             stateProperties8.BorderColor = System.Drawing.Color.Black;
             stateProperties8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(73)))), ((int)(((byte)(75)))));
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.ForeColor = System.Drawing.SystemColors.Control;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtgx.OnIdleState = stateProperties8;
             this.txtgx.Padding = new System.Windows.Forms.Padding(3);
@@ -5094,26 +5096,6 @@ namespace MetodosNumericos.Forms
             this.txtFuncion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFuncion_KeyPress);
             this.txtFuncion.Click += new System.EventHandler(this.txtFuncion_Click);
             // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 10;
-            this.bunifuElipse1.TargetControl = this.pnlBunifuCerrao;
-            // 
-            // bunifuElipse2
-            // 
-            this.bunifuElipse2.ElipseRadius = 10;
-            this.bunifuElipse2.TargetControl = this.pnlBunifu;
-            // 
-            // bunifuElipse3
-            // 
-            this.bunifuElipse3.ElipseRadius = 10;
-            this.bunifuElipse3.TargetControl = this.txtgx;
-            // 
-            // bunifuElipse4
-            // 
-            this.bunifuElipse4.ElipseRadius = 10;
-            this.bunifuElipse4.TargetControl = this.txthx;
-            // 
             // txtB
             // 
             this.txtB.AcceptsReturn = false;
@@ -5460,6 +5442,26 @@ namespace MetodosNumericos.Forms
             this.txtResult.UseSystemPasswordChar = false;
             this.txtResult.WordWrap = true;
             this.txtResult.TextChanged += new System.EventHandler(this.txtResult_TextChanged);
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 10;
+            this.bunifuElipse1.TargetControl = this.pnlBunifuCerrao;
+            // 
+            // bunifuElipse2
+            // 
+            this.bunifuElipse2.ElipseRadius = 10;
+            this.bunifuElipse2.TargetControl = this.pnlBunifu;
+            // 
+            // bunifuElipse3
+            // 
+            this.bunifuElipse3.ElipseRadius = 10;
+            this.bunifuElipse3.TargetControl = this.txtgx;
+            // 
+            // bunifuElipse4
+            // 
+            this.bunifuElipse4.ElipseRadius = 10;
+            this.bunifuElipse4.TargetControl = this.txthx;
             // 
             // ReglaFalsaForm
             // 

@@ -48,7 +48,7 @@ namespace MetodosNumericos.Forms
 
             for (float i = a; i <= b; i = ((float)(i + 0.5)))
             {
-                Expression e1 = new Expression($"Fx({i})", hx);
+                Expression e1 = new Expression($"Fx({i})", gx);
                 this.chart.Series["g(x)"].Points.AddXY(i, float.Parse(e1.calculate().ToString()));
             }
 
@@ -56,7 +56,7 @@ namespace MetodosNumericos.Forms
             // g(x)
             for (float i = a; i <= b; i = ((float)(i + 0.5)))
             {
-                Expression e2 = new Expression($"Fx({i})", gx);
+                Expression e2 = new Expression($"Fx({i})", hx);
                 this.chart.Series["h(x)"].Points.AddXY(i, float.Parse(e2.calculate().ToString()));
             }
         }
@@ -112,8 +112,10 @@ namespace MetodosNumericos.Forms
         // Metodo para expandir el grafico con un doble click
         private void chart_DoubleClick(object sender, EventArgs e)
         {
+            h = txthx.Text;
+            g = txtgx.Text;
 
-            (new GraficoForm(float.Parse(txtag.Text), float.Parse(txtbg.Text))).Show();
+            (new GraficoForm(float.Parse(txtag.Text), float.Parse(txtbg.Text), h,g)).Show();
 
         }
         private void btnClose_Click(object sender, EventArgs e)

@@ -977,7 +977,7 @@ namespace MetodosNumericos.Forms
         private void chart_DoubleClick(object sender, EventArgs e)
         {
 
-            (new GraficoForm(float.Parse(txtIA.Text), float.Parse(txtIB.Text))).Show();
+            //(new GraficoForm(float.Parse(txtIA.Text), float.Parse(txtIB.Text))).Show();
         }
 
         private void chart_MouseMove(object sender, MouseEventArgs e)
