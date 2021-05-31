@@ -224,6 +224,9 @@
     <EmbeddedResource Include="Forms\GraficoForm.resx">
       <DependentUpon>GraficoForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BiseccionForm.resx">
+      <DependentUpon>BiseccionForm.cs</DependentUpon>
+     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ReglaFalsaForm.resx">
       <DependentUpon>ReglaFalsaForm.cs</DependentUpon>
     </EmbeddedResource>
