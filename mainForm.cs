@@ -18,7 +18,7 @@ namespace MetodosNumericos
         public mainForm()
         {
             InitializeComponent();
-
+            OpenChildForm(new PrincipalForm());
         }
 
 
@@ -64,7 +64,10 @@ namespace MetodosNumericos
             childForm.Show();
         }
 
-
+        private void btnLogo_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new PrincipalForm());
+        }
         private void mainForm_Load(object sender, EventArgs e)
         {
 
@@ -141,5 +144,7 @@ namespace MetodosNumericos
         {
 
         }
+
+        
     }
 }
