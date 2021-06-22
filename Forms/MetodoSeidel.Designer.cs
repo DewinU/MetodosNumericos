@@ -346,6 +346,7 @@ namespace MetodosNumericos.Forms
             this.dgvEcuaciones.Size = new System.Drawing.Size(412, 229);
             this.dgvEcuaciones.TabIndex = 7;
             this.dgvEcuaciones.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.dgvEcuaciones.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dgvEcuaciones_EditingControlShowing);
             // 
             // bunifuLabel1
             // 

@@ -4893,6 +4893,7 @@ namespace MetodosNumericos.Forms
             this.txtbg.Name = "txtbg";
             this.txtbg.Size = new System.Drawing.Size(49, 26);
             this.txtbg.TabIndex = 7;
+            this.txtbg.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbg_KeyPress);
             // 
             // btn_Aceptar
             // 
@@ -5019,6 +5020,7 @@ namespace MetodosNumericos.Forms
             this.txtag.Name = "txtag";
             this.txtag.Size = new System.Drawing.Size(49, 26);
             this.txtag.TabIndex = 5;
+            this.txtag.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtag_KeyPress);
             // 
             // txtFuncion
             // 
@@ -5173,6 +5175,7 @@ namespace MetodosNumericos.Forms
             this.txtB.TextPlaceholder = "Enter text";
             this.txtB.UseSystemPasswordChar = false;
             this.txtB.WordWrap = true;
+            this.txtB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtB_KeyPress);
             // 
             // label1
             // 
@@ -5270,6 +5273,7 @@ namespace MetodosNumericos.Forms
             this.txtA.TextPlaceholder = "Enter text";
             this.txtA.UseSystemPasswordChar = false;
             this.txtA.WordWrap = true;
+            this.txtA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtA_KeyPress);
             // 
             // txtError
             // 
@@ -5345,6 +5349,7 @@ namespace MetodosNumericos.Forms
             this.txtError.TextPlaceholder = "Enter text";
             this.txtError.UseSystemPasswordChar = false;
             this.txtError.WordWrap = true;
+            this.txtError.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtError_KeyPress);
             // 
             // label5
             // 
