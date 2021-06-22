@@ -195,6 +195,12 @@
     <Compile Include="Forms\MetodoSeidel.Designer.cs">
       <DependentUpon>MetodoSeidel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\PrincipalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PrincipalForm.Designer.cs">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ReglaFalsaCalculoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,6 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\NewtonCalculo.resx">
       <DependentUpon>NewtonCalculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PrincipalForm.resx">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ReglaFalsaCalculoForm.resx">
       <DependentUpon>ReglaFalsaCalculoForm.cs</DependentUpon>
