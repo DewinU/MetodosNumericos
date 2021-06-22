@@ -104,5 +104,45 @@ namespace MetodosNumericos.Forms
         {
 
         }
+
+        private void dgvEcuaciones_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+            
+        }
+
+        private void dgvEcuaciones_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            
+
+        }
+
+        private void dgvEcuaciones_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
+        {
+            DataGridViewTextBoxEditingControl tb = (DataGridViewTextBoxEditingControl)e.Control;
+            tb.KeyPress += new KeyPressEventHandler(dataGridViewTextBox_KeyPress);
+            e.Control.KeyPress += new KeyPressEventHandler(dataGridViewTextBox_KeyPress);
+        }
+
+        private void dataGridViewTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //when i press enter,bellow code never run?
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                    (e.KeyChar != '.') && (e.KeyChar != '-'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+
+            if ((e.KeyChar == '-') && ((sender as TextBox).Text.IndexOf('-') > -1))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

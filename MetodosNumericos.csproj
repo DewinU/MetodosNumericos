@@ -32,6 +32,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>MetodosNumericos.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\icono.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
       <HintPath>packages\Bunifu.UI.WinForms.5.0.7\lib\net40\Bunifu.Licensing.dll</HintPath>
@@ -153,6 +159,12 @@
     <Compile Include="Class\GaussSeidel.cs" />
     <Compile Include="Class\Jacobi.cs" />
     <Compile Include="Class\Matriz.cs" />
+    <Compile Include="Forms\NewtonCalculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewtonCalculo.Designer.cs">
+      <DependentUpon>NewtonCalculo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\BiseccionCalculo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,12 +207,6 @@
     <Compile Include="Forms\ReglaFalsaForm.Designer.cs">
       <DependentUpon>ReglaFalsaForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Newton.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Newton.Designer.cs">
-      <DependentUpon>Newton.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\GraficoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +218,12 @@
     </Compile>
     <Compile Include="Forms\SecanteCalculo.Designer.cs">
       <DependentUpon>SecanteCalculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewtonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewtonForm.Designer.cs">
+      <DependentUpon>NewtonForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\SecanteForm.cs">
       <SubType>Form</SubType>
@@ -233,6 +245,9 @@
     <EmbeddedResource Include="Forms\BiseccionForm.resx">
       <DependentUpon>BiseccionForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewtonCalculo.resx">
+      <DependentUpon>NewtonCalculo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ReglaFalsaCalculoForm.resx">
       <DependentUpon>ReglaFalsaCalculoForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -250,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SecanteCalculo.resx">
       <DependentUpon>SecanteCalculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewtonForm.resx">
+      <DependentUpon>NewtonForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SecanteForm.resx">
       <DependentUpon>SecanteForm.cs</DependentUpon>
@@ -282,7 +300,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\-arrow-drop-down_89977.png" />
   </ItemGroup>
@@ -315,6 +335,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\minimize_thewindow_theapplication_2872.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconbig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icono.ico" />
+    <None Include="Resources\icono.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

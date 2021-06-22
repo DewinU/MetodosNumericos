@@ -97,7 +97,7 @@ namespace MetodosNumericos
 
         private void bunifuButton4_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Newton());
+            OpenChildForm(new NewtonForm());
         }
 
         private void bunifuButton8_Click(object sender, EventArgs e)
