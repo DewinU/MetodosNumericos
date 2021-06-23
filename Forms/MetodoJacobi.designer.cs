@@ -52,7 +52,9 @@ namespace MetodosNumericos.Forms
             this.txtProcess = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtResult = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtEcuaciones = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEcuaciones)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvEcuaciones
@@ -63,6 +65,8 @@ namespace MetodosNumericos.Forms
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.dgvEcuaciones.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvEcuaciones.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvEcuaciones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvEcuaciones.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(181)))), ((int)(((byte)(189)))));
             this.dgvEcuaciones.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -108,12 +112,12 @@ namespace MetodosNumericos.Forms
             this.dgvEcuaciones.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.dgvEcuaciones.HeaderBgColor = System.Drawing.Color.Empty;
             this.dgvEcuaciones.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvEcuaciones.Location = new System.Drawing.Point(12, 39);
+            this.dgvEcuaciones.Location = new System.Drawing.Point(10, 57);
             this.dgvEcuaciones.Name = "dgvEcuaciones";
             this.dgvEcuaciones.RowHeadersVisible = false;
             this.dgvEcuaciones.RowTemplate.Height = 40;
             this.dgvEcuaciones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEcuaciones.Size = new System.Drawing.Size(412, 229);
+            this.dgvEcuaciones.Size = new System.Drawing.Size(479, 271);
             this.dgvEcuaciones.TabIndex = 0;
             this.dgvEcuaciones.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.dgvEcuaciones.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEcuaciones_CellEnter);
@@ -123,11 +127,13 @@ namespace MetodosNumericos.Forms
             // bunifuLabel1
             // 
             this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel1.Location = new System.Drawing.Point(84, 8);
+            this.bunifuLabel1.Location = new System.Drawing.Point(183, 12);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(252, 25);
@@ -141,6 +147,7 @@ namespace MetodosNumericos.Forms
             this.btnJacobi.AllowAnimations = true;
             this.btnJacobi.AllowMouseEffects = true;
             this.btnJacobi.AllowToggling = false;
+            this.btnJacobi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnJacobi.AnimationSpeed = 200;
             this.btnJacobi.AutoGenerateColors = false;
             this.btnJacobi.AutoRoundBorders = false;
@@ -183,7 +190,7 @@ namespace MetodosNumericos.Forms
             this.btnJacobi.IdleIconLeftImage = null;
             this.btnJacobi.IdleIconRightImage = global::MetodosNumericos.Properties.Resources.matrix_icon_137416;
             this.btnJacobi.IndicateFocus = false;
-            this.btnJacobi.Location = new System.Drawing.Point(535, 164);
+            this.btnJacobi.Location = new System.Drawing.Point(619, 126);
             this.btnJacobi.Name = "btnJacobi";
             this.btnJacobi.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnJacobi.OnDisabledState.BorderRadius = 37;
@@ -245,6 +252,7 @@ namespace MetodosNumericos.Forms
             this.txtProcess.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtProcess.DefaultFont = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.txtProcess.DefaultText = "";
+            this.txtProcess.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtProcess.FillColor = System.Drawing.Color.WhiteSmoke;
             this.txtProcess.HideSelection = true;
             this.txtProcess.IconLeft = null;
@@ -253,7 +261,7 @@ namespace MetodosNumericos.Forms
             this.txtProcess.IconRight = null;
             this.txtProcess.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtProcess.Lines = new string[0];
-            this.txtProcess.Location = new System.Drawing.Point(76, 302);
+            this.txtProcess.Location = new System.Drawing.Point(0, 0);
             this.txtProcess.MaxLength = 32767;
             this.txtProcess.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtProcess.Modified = false;
@@ -289,7 +297,7 @@ namespace MetodosNumericos.Forms
             this.txtProcess.SelectionLength = 0;
             this.txtProcess.SelectionStart = 0;
             this.txtProcess.ShortcutsEnabled = true;
-            this.txtProcess.Size = new System.Drawing.Size(260, 122);
+            this.txtProcess.Size = new System.Drawing.Size(561, 332);
             this.txtProcess.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtProcess.TabIndex = 4;
             this.txtProcess.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -320,6 +328,7 @@ namespace MetodosNumericos.Forms
             this.txtResult.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtResult.DefaultFont = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.txtResult.DefaultText = "";
+            this.txtResult.Dock = System.Windows.Forms.DockStyle.Right;
             this.txtResult.FillColor = System.Drawing.Color.WhiteSmoke;
             this.txtResult.HideSelection = true;
             this.txtResult.IconLeft = null;
@@ -328,7 +337,7 @@ namespace MetodosNumericos.Forms
             this.txtResult.IconRight = null;
             this.txtResult.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtResult.Lines = new string[0];
-            this.txtResult.Location = new System.Drawing.Point(484, 302);
+            this.txtResult.Location = new System.Drawing.Point(561, 0);
             this.txtResult.MaxLength = 32767;
             this.txtResult.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtResult.Modified = false;
@@ -364,7 +373,7 @@ namespace MetodosNumericos.Forms
             this.txtResult.SelectionLength = 0;
             this.txtResult.SelectionStart = 0;
             this.txtResult.ShortcutsEnabled = true;
-            this.txtResult.Size = new System.Drawing.Size(260, 122);
+            this.txtResult.Size = new System.Drawing.Size(317, 332);
             this.txtResult.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtResult.TabIndex = 3;
             this.txtResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -379,6 +388,7 @@ namespace MetodosNumericos.Forms
             // 
             this.txtEcuaciones.AcceptsReturn = false;
             this.txtEcuaciones.AcceptsTab = false;
+            this.txtEcuaciones.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEcuaciones.AnimationSpeed = 200;
             this.txtEcuaciones.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtEcuaciones.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -402,7 +412,7 @@ namespace MetodosNumericos.Forms
             this.txtEcuaciones.IconRight = global::MetodosNumericos.Properties.Resources.leftanglebracket_120651;
             this.txtEcuaciones.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEcuaciones.Lines = new string[0];
-            this.txtEcuaciones.Location = new System.Drawing.Point(484, 89);
+            this.txtEcuaciones.Location = new System.Drawing.Point(508, 57);
             this.txtEcuaciones.MaxLength = 32767;
             this.txtEcuaciones.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtEcuaciones.Modified = false;
@@ -438,7 +448,7 @@ namespace MetodosNumericos.Forms
             this.txtEcuaciones.SelectionLength = 0;
             this.txtEcuaciones.SelectionStart = 0;
             this.txtEcuaciones.ShortcutsEnabled = true;
-            this.txtEcuaciones.Size = new System.Drawing.Size(286, 40);
+            this.txtEcuaciones.Size = new System.Drawing.Size(358, 46);
             this.txtEcuaciones.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.txtEcuaciones.TabIndex = 1;
             this.txtEcuaciones.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -450,15 +460,26 @@ namespace MetodosNumericos.Forms
             this.txtEcuaciones.WordWrap = true;
             this.txtEcuaciones.TextChange += new System.EventHandler(this.txtEcuaciones_TextChange);
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.txtProcess);
+            this.panel1.Controls.Add(this.txtResult);
+            this.panel1.Location = new System.Drawing.Point(0, 352);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(878, 332);
+            this.panel1.TabIndex = 6;
+            // 
             // MetodoJacobi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(878, 686);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnJacobi);
-            this.Controls.Add(this.txtProcess);
-            this.Controls.Add(this.txtResult);
             this.Controls.Add(this.bunifuLabel1);
             this.Controls.Add(this.txtEcuaciones);
             this.Controls.Add(this.dgvEcuaciones);
@@ -466,6 +487,7 @@ namespace MetodosNumericos.Forms
             this.Name = "MetodoJacobi";
             this.Text = "Jacobi";
             ((System.ComponentModel.ISupportInitialize)(this.dgvEcuaciones)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -479,5 +501,6 @@ namespace MetodosNumericos.Forms
         private Bunifu.UI.WinForms.BunifuTextBox txtResult;
         private Bunifu.UI.WinForms.BunifuTextBox txtProcess;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnJacobi;
+        private System.Windows.Forms.Panel panel1;
     }
 }

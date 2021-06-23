@@ -171,7 +171,7 @@ namespace MetodosNumericos.Forms
             this.Controls.Add(this.panel1);
             this.Name = "NewtonCalculo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BiseccionCalculo";
+            this.Text = "NewtonCalculo";
             this.Load += new System.EventHandler(this.BiseccionCalculo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);

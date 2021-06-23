@@ -28,15 +28,15 @@ namespace MetodosNumericos.Class
             //filas, columnas -> cantidad de filas y columnas respetivamente
 
             StringBuilder sb = new StringBuilder();
-            List<double> res = new List<double>();
+            List<float> res = new List<float>();
 
-            double x = matrix[filas - 1, columnas - 1] / matrix[filas - 1, columnas - 2];
+            float x = matrix[filas - 1, columnas - 1] / matrix[filas - 1, columnas - 2];
             sb.AppendFormat("\nX{0} = {1:G30}\n ", filas, x);
             res.Add(x);
 
             for (int f = filas - 2; f >= 0; f--)
             {
-                double sum = 0;
+                float sum = 0;
                 int max = 0;
 
                 for (int c = columnas - 2; c >= f + 1; c--)
@@ -45,7 +45,7 @@ namespace MetodosNumericos.Class
                     max++;
                 }
 
-                double r = (matrix[f, columnas - 1] - sum) / matrix[f, f];
+                float r = (matrix[f, columnas - 1] - sum) / matrix[f, f];
                 sb.AppendFormat("\nX{0} = {1:G30}\n ", f + 1, r);
                 res.Add(r);
             }
@@ -63,7 +63,7 @@ namespace MetodosNumericos.Class
             {
                 for (int f = fpivot + 1; f < filas; f++)
                 {
-                    double k = matrix[f, fpivot] / matrix[fpivot, fpivot];
+                    float k = matrix[f, fpivot] / matrix[fpivot, fpivot];
 
                     for (int c = fpivot; c < columnas; c++)
                     {

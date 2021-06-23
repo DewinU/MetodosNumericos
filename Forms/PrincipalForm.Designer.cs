@@ -32,10 +32,10 @@ namespace MetodosNumericos.Forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PrincipalForm));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -46,7 +46,7 @@ namespace MetodosNumericos.Forms
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = global::MetodosNumericos.Properties.Resources.iconbig;
-            this.pictureBox1.Location = new System.Drawing.Point(222, 56);
+            this.pictureBox1.Location = new System.Drawing.Point(269, 56);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(338, 132);
             this.pictureBox1.TabIndex = 0;
@@ -62,27 +62,10 @@ namespace MetodosNumericos.Forms
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.bunifuLabel1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(42, 47);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(771, 547);
+            this.panel1.Size = new System.Drawing.Size(864, 646);
             this.panel1.TabIndex = 1;
-            // 
-            // bunifuLabel1
-            // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Comic Sans MS", 15F);
-            this.bunifuLabel1.Location = new System.Drawing.Point(146, 194);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(500, 28);
-            this.bunifuLabel1.TabIndex = 1;
-            this.bunifuLabel1.Text = "--- Software Matemático para Métodos Numéricos ---";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel1.Click += new System.EventHandler(this.bunifuLabel1_Click);
             // 
             // panel2
             // 
@@ -90,10 +73,28 @@ namespace MetodosNumericos.Forms
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.Controls.Add(this.bunifuLabel3);
             this.panel2.Controls.Add(this.bunifuLabel2);
-            this.panel2.Location = new System.Drawing.Point(105, 277);
+            this.panel2.Location = new System.Drawing.Point(152, 277);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(568, 217);
             this.panel2.TabIndex = 2;
+            // 
+            // bunifuLabel3
+            // 
+            this.bunifuLabel3.AllowParentOverrides = false;
+            this.bunifuLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.bunifuLabel3.AutoEllipsis = false;
+            this.bunifuLabel3.CursorType = null;
+            this.bunifuLabel3.Font = new System.Drawing.Font("Comic Sans MS", 15F);
+            this.bunifuLabel3.Location = new System.Drawing.Point(126, 58);
+            this.bunifuLabel3.Name = "bunifuLabel3";
+            this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel3.Size = new System.Drawing.Size(342, 113);
+            this.bunifuLabel3.TabIndex = 4;
+            this.bunifuLabel3.Text = "- Alejandro Hernández Gadea\r\n- Oswell Antony Gomez Jacamo\r\n- Gustavo Guillermo Ca" +
+    "strillo Huerta\r\n- Dewin Alexander Umaña Hernández";
+            this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel2
             // 
@@ -113,23 +114,23 @@ namespace MetodosNumericos.Forms
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuLabel2.Click += new System.EventHandler(this.bunifuLabel2_Click);
             // 
-            // bunifuLabel3
+            // bunifuLabel1
             // 
-            this.bunifuLabel3.AllowParentOverrides = false;
-            this.bunifuLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.bunifuLabel3.AutoEllipsis = false;
-            this.bunifuLabel3.CursorType = null;
-            this.bunifuLabel3.Font = new System.Drawing.Font("Comic Sans MS", 15F);
-            this.bunifuLabel3.Location = new System.Drawing.Point(126, 58);
-            this.bunifuLabel3.Name = "bunifuLabel3";
-            this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(342, 113);
-            this.bunifuLabel3.TabIndex = 4;
-            this.bunifuLabel3.Text = "- Alejandro Hernández Gadea\r\n- Oswell Antony Gomez Jacamo\r\n- Gustavo Guillermo Ca" +
-    "strillo Huerta\r\n- Dewin Alexander Umaña Hernández";
-            this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Comic Sans MS", 15F);
+            this.bunifuLabel1.Location = new System.Drawing.Point(193, 194);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(500, 28);
+            this.bunifuLabel1.TabIndex = 1;
+            this.bunifuLabel1.Text = "--- Software Matemático para Métodos Numéricos ---";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel1.Click += new System.EventHandler(this.bunifuLabel1_Click);
             // 
             // bunifuLabel4
             // 

@@ -27,7 +27,7 @@ namespace MetodosNumericos.Forms
             {
                 Gauss mt = new Gauss(dgvEcuaciones.RowCount, dgvEcuaciones.ColumnCount);
 
-                double[,] matIn = llenarArray();
+                float[,] matIn = llenarArray();
 
                 for (int i = 0; i < dgvEcuaciones.RowCount; i++)
                 {
@@ -84,14 +84,14 @@ namespace MetodosNumericos.Forms
             }
         }
 
-        private double[,] llenarArray()
+        private float[,] llenarArray()
         {
-            double[,] array = new double[dgvEcuaciones.Rows.Count, dgvEcuaciones.Columns.Count];
+            float[,] array = new float[dgvEcuaciones.Rows.Count, dgvEcuaciones.Columns.Count];
             for (int i = 0; i < dgvEcuaciones.Columns.Count; i++)
             {
                 for (int j = 0; j < dgvEcuaciones.Rows.Count; j++)
                 {
-                    array[j, i] = double.Parse(dgvEcuaciones.Rows[j].Cells[i].Value.ToString());
+                    array[j, i] = float.Parse(dgvEcuaciones.Rows[j].Cells[i].Value.ToString());
                 }
             }
 
@@ -134,6 +134,16 @@ namespace MetodosNumericos.Forms
             {
                 e.Handled = true;
             }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtMatrix_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

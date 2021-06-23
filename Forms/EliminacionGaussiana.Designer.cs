@@ -52,7 +52,11 @@ namespace MetodosNumericos.Forms
             this.txtResult = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtMatrix = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEcuaciones)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvEcuaciones
@@ -63,8 +67,8 @@ namespace MetodosNumericos.Forms
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.dgvEcuaciones.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvEcuaciones.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.dgvEcuaciones.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvEcuaciones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvEcuaciones.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvEcuaciones.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(181)))), ((int)(((byte)(189)))));
@@ -111,13 +115,13 @@ namespace MetodosNumericos.Forms
             this.dgvEcuaciones.HeaderBackColor = System.Drawing.Color.DarkSlateGray;
             this.dgvEcuaciones.HeaderBgColor = System.Drawing.Color.Empty;
             this.dgvEcuaciones.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvEcuaciones.Location = new System.Drawing.Point(29, 65);
+            this.dgvEcuaciones.Location = new System.Drawing.Point(10, 57);
             this.dgvEcuaciones.Name = "dgvEcuaciones";
             this.dgvEcuaciones.RowHeadersVisible = false;
             this.dgvEcuaciones.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvEcuaciones.RowTemplate.Height = 40;
             this.dgvEcuaciones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEcuaciones.Size = new System.Drawing.Size(468, 347);
+            this.dgvEcuaciones.Size = new System.Drawing.Size(479, 271);
             this.dgvEcuaciones.TabIndex = 0;
             this.dgvEcuaciones.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.DarkSlateGray;
             this.dgvEcuaciones.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dgvEcuaciones_EditingControlShowing);
@@ -127,7 +131,7 @@ namespace MetodosNumericos.Forms
             this.btnGauss.AllowAnimations = true;
             this.btnGauss.AllowMouseEffects = true;
             this.btnGauss.AllowToggling = false;
-            this.btnGauss.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGauss.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGauss.AnimationSpeed = 200;
             this.btnGauss.AutoGenerateColors = false;
             this.btnGauss.AutoRoundBorders = true;
@@ -170,7 +174,7 @@ namespace MetodosNumericos.Forms
             this.btnGauss.IdleIconLeftImage = null;
             this.btnGauss.IdleIconRightImage = global::MetodosNumericos.Properties.Resources.matrix_icon_137416;
             this.btnGauss.IndicateFocus = false;
-            this.btnGauss.Location = new System.Drawing.Point(593, 296);
+            this.btnGauss.Location = new System.Drawing.Point(599, 130);
             this.btnGauss.Name = "btnGauss";
             this.btnGauss.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnGauss.OnDisabledState.BorderRadius = 1;
@@ -217,8 +221,7 @@ namespace MetodosNumericos.Forms
             // 
             this.txtEcuaciones.AcceptsReturn = false;
             this.txtEcuaciones.AcceptsTab = false;
-            this.txtEcuaciones.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtEcuaciones.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEcuaciones.AnimationSpeed = 200;
             this.txtEcuaciones.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtEcuaciones.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -242,7 +245,7 @@ namespace MetodosNumericos.Forms
             this.txtEcuaciones.IconRight = global::MetodosNumericos.Properties.Resources.leftanglebracket_120651;
             this.txtEcuaciones.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEcuaciones.Lines = new string[0];
-            this.txtEcuaciones.Location = new System.Drawing.Point(548, 30);
+            this.txtEcuaciones.Location = new System.Drawing.Point(508, 57);
             this.txtEcuaciones.MaxLength = 32767;
             this.txtEcuaciones.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtEcuaciones.Modified = false;
@@ -278,7 +281,7 @@ namespace MetodosNumericos.Forms
             this.txtEcuaciones.SelectionLength = 0;
             this.txtEcuaciones.SelectionStart = 0;
             this.txtEcuaciones.ShortcutsEnabled = true;
-            this.txtEcuaciones.Size = new System.Drawing.Size(280, 40);
+            this.txtEcuaciones.Size = new System.Drawing.Size(358, 46);
             this.txtEcuaciones.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.txtEcuaciones.TabIndex = 3;
             this.txtEcuaciones.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -294,7 +297,6 @@ namespace MetodosNumericos.Forms
             // 
             this.txtResult.AcceptsReturn = false;
             this.txtResult.AcceptsTab = false;
-            this.txtResult.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtResult.AnimationSpeed = 200;
             this.txtResult.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtResult.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -310,6 +312,7 @@ namespace MetodosNumericos.Forms
             this.txtResult.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtResult.DefaultFont = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtResult.DefaultText = "";
+            this.txtResult.Dock = System.Windows.Forms.DockStyle.Right;
             this.txtResult.FillColor = System.Drawing.Color.WhiteSmoke;
             this.txtResult.HideSelection = true;
             this.txtResult.IconLeft = null;
@@ -318,7 +321,7 @@ namespace MetodosNumericos.Forms
             this.txtResult.IconRight = null;
             this.txtResult.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtResult.Lines = new string[0];
-            this.txtResult.Location = new System.Drawing.Point(511, 443);
+            this.txtResult.Location = new System.Drawing.Point(489, 0);
             this.txtResult.MaxLength = 32767;
             this.txtResult.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtResult.Modified = false;
@@ -354,7 +357,7 @@ namespace MetodosNumericos.Forms
             this.txtResult.SelectionLength = 0;
             this.txtResult.SelectionStart = 0;
             this.txtResult.ShortcutsEnabled = true;
-            this.txtResult.Size = new System.Drawing.Size(272, 169);
+            this.txtResult.Size = new System.Drawing.Size(389, 332);
             this.txtResult.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtResult.TabIndex = 2;
             this.txtResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -369,8 +372,6 @@ namespace MetodosNumericos.Forms
             // 
             this.txtMatrix.AcceptsReturn = false;
             this.txtMatrix.AcceptsTab = false;
-            this.txtMatrix.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtMatrix.AnimationSpeed = 200;
             this.txtMatrix.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtMatrix.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -386,6 +387,7 @@ namespace MetodosNumericos.Forms
             this.txtMatrix.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMatrix.DefaultFont = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMatrix.DefaultText = "";
+            this.txtMatrix.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtMatrix.FillColor = System.Drawing.Color.WhiteSmoke;
             this.txtMatrix.HideSelection = true;
             this.txtMatrix.IconLeft = null;
@@ -394,7 +396,7 @@ namespace MetodosNumericos.Forms
             this.txtMatrix.IconRight = null;
             this.txtMatrix.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMatrix.Lines = new string[0];
-            this.txtMatrix.Location = new System.Drawing.Point(56, 457);
+            this.txtMatrix.Location = new System.Drawing.Point(0, 0);
             this.txtMatrix.MaxLength = 32767;
             this.txtMatrix.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtMatrix.Modified = false;
@@ -430,7 +432,7 @@ namespace MetodosNumericos.Forms
             this.txtMatrix.SelectionLength = 0;
             this.txtMatrix.SelectionStart = 0;
             this.txtMatrix.ShortcutsEnabled = true;
-            this.txtMatrix.Size = new System.Drawing.Size(401, 169);
+            this.txtMatrix.Size = new System.Drawing.Size(489, 332);
             this.txtMatrix.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtMatrix.TabIndex = 1;
             this.txtMatrix.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -440,6 +442,7 @@ namespace MetodosNumericos.Forms
             this.txtMatrix.TextPlaceholder = "Procedimiento";
             this.txtMatrix.UseSystemPasswordChar = false;
             this.txtMatrix.WordWrap = true;
+            this.txtMatrix.TextChanged += new System.EventHandler(this.txtMatrix_TextChanged);
             // 
             // bunifuLabel1
             // 
@@ -450,7 +453,7 @@ namespace MetodosNumericos.Forms
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel1.Location = new System.Drawing.Point(186, 30);
+            this.bunifuLabel1.Location = new System.Drawing.Point(183, 12);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(148, 25);
@@ -459,24 +462,47 @@ namespace MetodosNumericos.Forms
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.txtMatrix);
+            this.panel1.Controls.Add(this.txtResult);
+            this.panel1.Location = new System.Drawing.Point(0, 351);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(878, 332);
+            this.panel1.TabIndex = 7;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.dgvEcuaciones);
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.btnGauss);
+            this.panel2.Controls.Add(this.bunifuLabel1);
+            this.panel2.Controls.Add(this.txtEcuaciones);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(878, 686);
+            this.panel2.TabIndex = 8;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
             // EliminacionGaussiana
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(862, 647);
-            this.Controls.Add(this.bunifuLabel1);
-            this.Controls.Add(this.btnGauss);
-            this.Controls.Add(this.txtEcuaciones);
-            this.Controls.Add(this.txtResult);
-            this.Controls.Add(this.txtMatrix);
-            this.Controls.Add(this.dgvEcuaciones);
+            this.ClientSize = new System.Drawing.Size(878, 686);
+            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EliminacionGaussiana";
             this.Text = "EliminacionGaussiana";
             ((System.ComponentModel.ISupportInitialize)(this.dgvEcuaciones)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -488,5 +514,7 @@ namespace MetodosNumericos.Forms
         private Bunifu.UI.WinForms.BunifuTextBox txtEcuaciones;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnGauss;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

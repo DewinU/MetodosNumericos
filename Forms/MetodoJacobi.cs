@@ -24,7 +24,7 @@ namespace MetodosNumericos.Forms
 
             Jacobi mt = new Jacobi(dgvEcuaciones.RowCount, dgvEcuaciones.ColumnCount);
 
-            double[,] matIn = llenarArray();
+            float[,] matIn = llenarArray();
 
             for (int i = 0; i < dgvEcuaciones.RowCount; i++)
             {
@@ -76,14 +76,14 @@ namespace MetodosNumericos.Forms
             }
         }
 
-        private double[,] llenarArray()
+        private float[,] llenarArray()
         {
-            double[,] array = new double[dgvEcuaciones.RowCount, dgvEcuaciones.ColumnCount];
+            float[,] array = new float[dgvEcuaciones.RowCount, dgvEcuaciones.ColumnCount];
             for (int i = 0; i < dgvEcuaciones.ColumnCount; i++)
             {
                 for (int j = 0; j < dgvEcuaciones.RowCount; j++)
                 {
-                    array[j, i] = double.Parse(dgvEcuaciones.Rows[j].Cells[i].Value.ToString());
+                    array[j, i] = float.Parse(dgvEcuaciones.Rows[j].Cells[i].Value.ToString());
                 }
             }
 

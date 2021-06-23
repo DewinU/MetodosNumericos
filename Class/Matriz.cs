@@ -22,16 +22,16 @@ namespace MetodosNumericos.Class
     {
         protected int filas;
         protected int columnas;
-        protected double[,] matrix;
+        protected float[,] matrix;
 
         public Matriz(int filas, int columnas)
         {
             this.filas = filas;
             this.columnas = columnas;
-            this.matrix = new double[filas, columnas];
+            this.matrix = new float[filas, columnas];
         }
 
-        public void SetValue(int fila, int columna, double value)
+        public void SetValue(int fila, int columna, float value)
         {
             this.matrix[fila, columna] = value;
         }
