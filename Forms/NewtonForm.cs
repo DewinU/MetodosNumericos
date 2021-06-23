@@ -804,22 +804,23 @@ namespace MetodosNumericos.Forms
                 default:
                     break;
             }
-            a = Double.Parse(txtA.Text);
-            error = double.Parse(txtError.Text);
-            Function Fx = new Function($@"Fx(x) = {f}");
-            Argument x = new Argument($"x = {txtA.Text}");
-            Expression e1 = new Expression($"Fx({a})", Fx);
-            Expression e2 = new Expression($"der({f}, x)", x);
-            double result = e1.calculate() * e2.calculate();
-
-            if (e1.calculate().ToString().Equals("NaN"))
+            try
             {
-
-                MessageBox.Show("Funcion no valida", "Error de funcion", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-
+                a = Double.Parse(txtA.Text);
+                error = double.Parse(txtError.Text);
+                Function Fx = new Function($@"Fx(x) = {f}");
+                Argument x = new Argument($"x = {txtA.Text}");
+                Expression e1 = new Expression($"Fx({a})", Fx);
+                Expression e2 = new Expression($"der({f}, x)", x);
+                double result = e1.calculate() * e2.calculate();
+                txtResult.Text = $"{e1.getExpressionString()} = {e1.calculate()}    Fx'({a}) = {e2.calculate()}";
             }
-            txtResult.Text = $"{e1.getExpressionString()} = {e1.calculate()}    Fx'({a}) = {e2.calculate()}";
+            catch
+            {
+                MessageBox.Show("Digite bien los campos", "Error de funcion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            
         }
 
         //Metodos de validacion de textbox

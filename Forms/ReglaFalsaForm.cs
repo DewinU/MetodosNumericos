@@ -947,32 +947,34 @@ namespace MetodosNumericos.Forms
                 default:
                     break;
             }
-            a = Double.Parse(txtA.Text);
-            b = Double.Parse(txtB.Text);
-            error = double.Parse(txtError.Text);
-            Function Fx = new Function($@"Fx(x) = {f}");
-            Expression e1 = new Expression($"Fx({a})", Fx);
-            Expression e2 = new Expression($"Fx({b})", Fx);
-            double result = e1.calculate() * e2.calculate();
-
-            if (e1.calculate().ToString().Equals("NaN"))
+            try
             {
+                a = Double.Parse(txtA.Text);
+                b = Double.Parse(txtB.Text);
+                error = double.Parse(txtError.Text);
+                Function Fx = new Function($@"Fx(x) = {f}");
+                Expression e1 = new Expression($"Fx({a})", Fx);
+                Expression e2 = new Expression($"Fx({b})", Fx);
+                double result = e1.calculate() * e2.calculate();
 
-                MessageBox.Show("Funcion no valida", "Error de funcion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                if (result < 0)
+                {
+
+                    txtResult.Text = e1.getExpressionString() + " = " + e1.calculate().ToString() + " " + e2.getExpressionString() + " = " + e2.calculate().ToString() + " " + "Verdadero";
+                    BiseccionCalculo bs = new BiseccionCalculo();
+                    bs.getDatos(f, a, b, error);
+                    bs.ShowDialog();
+                }
+                else
+                {
+                    txtResult.Text = e1.getExpressionString() + " = " + e1.calculate().ToString() + " " + e2.getExpressionString() + " = " + e2.calculate().ToString() + " " + "Falso";
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Digite bien los campos", "Error de funcion", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-
-            }
-            else if (result < 0)
-            {
-
-                txtResult.Text = e1.getExpressionString() + " = " + e1.calculate().ToString() + " " + e2.getExpressionString() + " = " + e2.calculate().ToString() + " " + "Verdadero";
-                ReglaFalsaCalculoForm rf = new ReglaFalsaCalculoForm();
-                rf.getDatos(f, a, b, error);
-                rf.ShowDialog();
-            }
-            else
-            {
-                txtResult.Text = e1.getExpressionString() + " = " + e1.calculate().ToString() + " " + e2.getExpressionString() + " = " + e2.calculate().ToString() + " " + "Falso";
             }
         }
 
